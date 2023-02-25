@@ -1,0 +1,1084 @@
+Rt 101
+     Wurmple     Lv 2-3     Very Common
+     Poochyena   Lv 2-3     Very Common
+     Zigzagoon 	 Lv 2-3	    Uncommon
+
+Rt 103
+     Poochyena   Lv 2-4	    Very Common
+     Wingull     Lv 2-4	    Common
+     Zigzagoon   Lv 3-4     Common
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 102
+     Poochyena   Lv 3-4     Common
+     Wurmple     Lv 3-4     Common
+     Lotad       Lv 3-4     Common
+     Zigzagoon   Lv 3-4     Uncommon
+     Ralts       Lv 4       Rare
+     Seedot      Lv 3       Very Rare
+  surf
+     Marill      Lv 5-35    Very Common
+     Goldeen     Lv 20-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Corphish    Lv 10-30   Common
+   Super Rod
+     Corphish    Lv 20-45   Very Common
+
+Petalburg City
+  surf
+     Marill      Lv 5-35    Very Common
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Corphish    Lv 10-30   Common
+   Super Rod
+     Corphish    Lv 20-45   Very Common
+
+Rt 104
+     Poochyena   Lv 4-5     Common
+     Wurmple     Lv 4       Common
+     Marill      Lv 4-5     Common
+     Taillow     Lv 4-5     Uncommon
+     Wingull     Lv 3-5     Uncommon
+  surf
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+     Magikarp    Lv 5-45    Very Common
+
+Petalburg Woods
+     Poochyena   Lv 5-6     Common
+     Wurmple     Lv 5-6     Common
+     Shroomish   Lv 5-6     Uncommon
+     Silcoon     Lv 5       Uncommon
+     Cascoon     Lv 5       Uncommon
+     Taillow     Lv 5-6     Rare
+     Slakoth     Lv 5-6     Rare
+
+Rt 116
+     Poochyena   Lv 6-8     Common
+     Whismur     Lv 6       Common
+     Nincada     Lv 6-7     Common
+     Abra        Lv 7       Uncommon
+     Taillow     Lv 6-8     Common
+     Skitty      Lv 7-8     Very Rare
+
+Rusturf Tunnel
+     Whismur     Lv 5-8     Very Common
+
+Rt 105
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 106
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Dewford Town
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Granite Cave F1
+     Zubat       Lv 7-8     Common
+     Makuhita    Lv 6-10    Very Common
+     Abra        Lv 8       Uncommon
+     Geodude     Lv 6-9     Uncommon
+
+Granite Cave BF1
+     Zubat       Lv 9-10    Common
+     Aron        Lv 9-11    Common
+     Abra        Lv 9       Uncommon
+     Makuhita    Lv 10-11   Uncommon
+     Sableye     Lv 9-11    Uncommon
+
+Granite Cave BF2
+     Zubat       Lv 10-11   Common
+     Aron        Lv 10-12   Common
+     Abra        Lv 10      Uncommon
+     Sableye     Lv 10-12   Common
+  rock smash
+     Geodude     Lv 5-20    Very Common
+     Nosepass    Lv 10-20   Common
+
+Granite Cave Stephen’s Room
+     Zubat       Lv 7-8     Common
+     Makuhita    Lv 6-10    Very Common
+     Abra        Lv 8       Uncommon
+     Aron        Lv 7-8     Uncommon
+
+Rt 107
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 108
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Abandoned Ship
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Tentacruel  Lv 30-35   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+   Super Rod
+     Tentacool   Lv 25-35   Very Common
+     Tentacruel  Lv 20-35   Common
+
+Rt 109
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Slateport City
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 110
+     Poochyena   Lv 12      Common
+     Electrike   Lv 12-13   Common
+     Gulpin      Lv 12-13   Uncommon
+     Minun       Lv 13      Uncommon
+     Oddish      Lv 13      Uncommon
+     Wingull     Lv 12      Uncommon
+     Plusle      Lv 12-13   Very Rare
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 117
+     Poochyena   Lv 13-14   Common
+     Oddish      Lv 13-14   Common
+     Marill      Lv 13      Uncommon
+     Illumise    Lv 13-14   Common
+     Volbeat     Lv 13      Very Rare
+     Seedot      Lv 13      Very Rare
+  surf
+     Marill      Lv 5-35    Very Common
+     Goldeen     Lv 20-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Corphish    Lv 10-30   Common
+   Super Rod
+     Corphish    Lv 20-45   Very Common
+
+Rt 111
+     Sandshrew   Lv 19-21   Common
+     Trapinch    Lv 19-21   Common
+     Baltoy      Lv 19-21   Common
+     Cacnea      Lv 20-22   Uncommon
+  rock smash
+     Geodude     Lv 5-20    Very Common
+  surf
+     Marill      Lv 5-35    Very Common
+     Goldeen     Lv 20-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 20-45   Very Common
+
+Illusion Pillar
+     Sandshrew   Lv 20-24   Very Common
+     Trapinch    Lv 20-24   Very Common
+
+Rt 112
+     Numel       Lv 14-16   Very Common
+     Marill      Lv 14-16   Common
+
+Fiery Path
+     Numel       Lv 15-16   Common
+     Koffing     Lv 15-16   Common
+     Machop      Lv 15-16   Uncommon
+     Torkoal     Lv 14-16   Common
+     Slugma      Lv 15      Uncommon
+     Grimer      Lv 14      Rare
+
+Rt 113	
+     Spinda      Lv 14-16   Very Common
+     Slugma      Lv 14-16   Common
+     Skarmory    Lv 16      Rare
+
+Rt 114	
+     Swablu      Lv 15-17   Common
+     Lotad       Lv 15-16   Common
+     Lombre      Lv 16-18   Common
+     Seviper     Lv 15-17   Uncommon
+     Nuzleaf     Lv 15      Rare
+  rock smash
+     Geodude     Lv 5-20    Very Common
+  surf
+     Marill      Lv 5-35    Very Common
+     Goldeen     Lv 20-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 20-45   Very Common
+
+Meteor Falls Entrance
+     Zubat       Lv 14-20   Very Common
+     Solrock     Lv 14-18   Common
+  surf
+     Zubat       Lv 5-35    Very Common
+     Solrock     Lv 5-35    Uncommon
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 20-45   Very Common
+
+Meteor Falls Dragon Room
+     Golbat      Lv 33-40   Very Common
+     Bagon       Lv 25-35   Common
+     Solrock     Lv 35-39   Common
+  surf
+     Golbat      Lv 30-35   Very Common
+     Solrock     Lv 5-35    Uncommon
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 25-35   Very Common
+     Whiscash    Lv 30-45   Common
+
+Meteor Falls Back Areas
+     Golbat      Lv 33-40   Very Common
+     Solrock     Lv 33-39   Common
+  surf
+     Golbat      Lv 30-35   Very Common
+     Solrock     Lv 5-35    Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 25-35   Very Common
+     Whiscash    Lv 30-45   Common
+
+Rt 115
+     Swablu      Lv 23-25   Common
+     Taillow     Lv 23-25   Common
+     Swellow     Lv 25      Uncommon
+     Jigglypuff  Lv 24-25   Uncommon
+     Wingull     Lv 24-26   Uncommon
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Jagged Pass
+     Numel       Lv 20-22   Very Common
+     Machop      Lv 20-22   Common
+     Spoink      Lv 20-22   Common
+
+New Mauville Basement
+     Voltorb     Lv 22-26   Very Common
+     Magnemite   Lv 22-26   Very Common
+     Electrode   Lv 26      Very Rare
+     Magneton    Lv 26      Very Rare
+
+New Mauville Entrance
+     Voltorb     Lv 22-26   Very Common
+     Magnemite   Lv 22-26   Very Common
+
+Rt 118
+     Zigzagoon   Lv 24-26   Common
+     Electrike   Lv 24-26   Common
+     Linoone     Lv 26      Uncommon
+     Manectric	 Lv 26      Uncommon
+     Wingull     Lv 25-27   Common
+     Kecleon     Lv 25      Very Rare
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Carvanha    Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Carvanha    Lv 20-45   Very Common
+
+Rt 119
+     Zigzagoon   Lv 25-27   Common
+     Linoone     Lv 25-27   Common
+     Oddish      Lv 24-27   Common
+     Tropius     Lv 25-27   Uncommon
+     Kecleon     Lv 25      Very Rare
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Carvanha    Lv 10-30   Common
+   Super Rod
+     Carvanha    Lv 20-45   Very Common
+
+NOTE:  When fishing on Route 119, there are 6
+       tiles where Feebas can be caught.  Those
+       6 tiles are random, and can be randomized
+       again by resetting the "Trendy Phrase" on 
+       Dewford Island.  Feebas can be caught by
+       any rod at a level that corresponds with
+       the level of the rod.
+
+Rt 120	
+     Poochyena   Lv 25      Common
+     Mightyena   Lv 25-27   Common
+     Oddish      Lv 25-27   Common
+     Marill      Lv 25-27   Uncommon
+     Absol       Lv 25-27   Uncommon
+     Kecleon     Lv 25      Very Rare
+     Seedot      Lv 25      Very Rare
+  surf
+     Marill      Lv 5-35    Very Common
+     Goldeen     Lv 20-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 20-45   Very Common
+
+Rt 121
+     Poochyena   Lv 26      Common
+     Shuppet     Lv 26-28   Common
+     Mightyena   Lv 26-28   Common
+     Oddish      Lv 26-28   Uncommon
+     Gloom       Lv 28      Rare
+     Wingull     Lv 26-28   Uncommon
+     Kecleon     Lv 25      Very Rare
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Safari Zone Entrance & Southwest
+     Oddish      Lv 25-27   Common
+     Girafarig   Lv 25-27   Common
+     Natu        Lv 25      Uncommon
+     Doduo       Lv 25      Uncommon
+     Gloom       Lv 25      Rare
+     Wobbuffet   Lv 27-29   Uncommon
+     Pikachu     Lv 25-27   Rare
+  surf (Southwest)
+     Psyduck     Lv 20-35   Very Common
+  fish (Southwest)
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+   Super Rod
+     Goldeen     Lv 25-35   Very Common
+     Seaking     Lv 25-40   Common
+
+Safari Zone Northeast
+     Phanpy      Lv 27-29   Common
+     Oddish      Lv 27-29   Common
+     Natu        Lv 27-29   Uncommon
+     Gloom       Lv 29-31   Uncommon
+     Xatu        Lv 29-31   Rare
+     Heracross   Lv 27-29   Rare
+  rock smash
+     Geodude     Lv 5-30    Very Common
+		
+Safari Zone Northwest
+     Rhyhorn     Lv 27-29   Common
+     Oddish      Lv 27-29   Common
+     Doduo       Lv 27-29   Uncommon
+     Gloom       Lv 29-31   Uncommon
+     Dodrio      Lv 29-31   Rare
+     Pinsir      Lv 27-29   Rare
+  surf
+     Psyduck     Lv 20-35   Very Common
+     Golduck     Lv 25-40   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+   Super Rod
+     Goldeen     Lv 25-35   Very Common
+     Seaking     Lv 25-40   Common
+
+Safari Zone Extra 1
+     Sunkern     Lv 33-35   Common
+     Mareep      Lv 34-36   Common
+     Aipom       Lv 34      Uncommon
+     Spinarak    Lv 33      Uncommon
+     Hoothoot    Lv 35      Rare
+     Snubbull    Lv 34      Rare
+     Stantler    Lv 36-39   Rare
+     Gligar      Lv 37-40   Rare
+  surf
+     Wooper      Lv 25-30   Very Common
+     Marill      Lv 25-35   Common
+     Quagsire    Lv 35-40   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 25-30   Very Common
+     Goldeen     Lv 25-30   Common
+   Good Rod
+     Magikarp    Lv 25-30   Very Common
+     Goldeen     Lv 25-30   Common
+     Remoraid    Lv 30-35   Common
+   Super Rod
+     Goldeen     Lv 25-30   Common
+     Remoraid    Lv 25-35   Very Common
+     Octillery   Lv 35-40   Very Rare
+
+Safari Zone Extra 2
+     Aipom       Lv 33-35   Common
+     Teddiursa   Lv 34-36   Common
+     Sunkern     Lv 34      Uncommon
+     Ledyba      Lv 33      Uncommon
+     Hoothoot    Lv 35      Rare
+     Pineco      Lv 34      Rare
+     Houndour    Lv 36-39   Rare
+     Miltank     Lv 37-40   Rare
+  rock smash
+     Shuckle     Lv 20-40   Very Common
+
+Lilycove City
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 25-45   Very Common
+     Staryu      Lv 25-30   Uncommon
+
+Rt 122
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Mt Pyre F1-3
+     Shuppet     Lv 22-29   Very Common
+
+Mt Pyre F4-6
+     Shuppet     Lv 22-29   Very Common
+     Duskull     Lv 25-29   Uncommon
+
+Mt Pyre Mountain Wall
+     Shuppet     Lv 27-29   Very Common
+     Vulpix      Lv 25-29   Common
+     Wingull     Lv 26-28   Uncommon
+
+Mt Pyre Summit
+     Shuppet     Lv 24-30   Very Common
+     Duskull     Lv 26-30   Uncommon
+     Chimecho    Lv 28      Very Rare
+
+Rt 123
+     Poochyena   Lv 26      Common
+     Shuppet     Lv 26-28   Common
+     Mightyena   Lv 26-28   Common
+     Oddish      Lv 26-28   Uncommon
+     Gloom       Lv 28      Rare
+     Wingull     Lv 26-28   Uncommon
+     Kecleon     Lv 25      Very Rare
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 124
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  underwater
+     Clamperl    Lv 20-35   Very Common
+     Chinchou    Lv 20-30   Common
+     Relicanth   Lv 30-35   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Mossdeep City
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 125
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Shoal Cave Entrance, F1 & BF1
+     Zubat       Lv 26-32   Very Common
+     Golbat      Lv 32      Rare
+     Spheal      Lv 26-32   Very Common
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Zubat       Lv 5-35    Common
+     Spheal      Lv 25-35   Uncommon
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Shoal Cave BF2
+     Zubat       Lv 26-30   Common
+     Snorunt     Lv 26-30   Uncommon
+     Golbat      Lv 30-32   Rare
+     Spheal      Lv 26-32   Very Common
+
+Rt 126
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  underwater surf
+     Clamperl    Lv 20-35   Very Common
+     Chinchou    Lv 20-30   Common
+     Relicanth   Lv 30-35   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Sootopolis City
+  surf
+     Magikarp    Lv 5-35    Very Common
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+   Super Rod
+     Magikarp    Lv 30-35   Very Common
+     Gyarados    Lv 5-45    Common
+
+Cave of Origin Entrance
+     Zubat       Lv 28-34   Very Common
+     Golbat      Lv 33-36   Uncommon
+
+Cave of Origin BF1-3, F1
+     Zubat       Lv 30-34   Very Common
+     Sableye     Lv 30-34   Common
+     Golbat      Lv 33-36   Uncommon
+
+Rt 127
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 128
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Luvdisc     Lv 30-35   Common
+     Wailmer     Lv 30-45   Very Common
+     Corsola     Lv 30-35   Uncommon
+
+Seafloor Cavern
+     Zubat       Lv 28-36   Very Common
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Zubat       Lv 5-35    Common
+     Golbat      Lv 30-35   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Wailmer     Lv 20-45   Very Common
+
+Rt 129
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+     Wailord     Lv 25-30   Very Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 130 Mirage Island
+     Wynaut      Lv 5-50    Very Common
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 131
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 25-45   Very Common
+
+Rt 132
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 30-45   Very Common
+     Horsea      Lv 25-30   Uncommon
+
+Rt 133
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 30-45   Very Common
+     Horsea      Lv 25-30   Uncommon
+
+Rt 134
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Tentacool   Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Sharpedo    Lv 30-35   Common
+     Wailmer     Lv 30-45   Very Common
+     Horsea      Lv 25-30   Uncommon
+
+Ever Grande City
+  surf
+     Tentacool   Lv 5-35    Very Common
+     Wingull     Lv 10-30   Common
+     Pelipper    Lv 25-30   Rare
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Tentacool   Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Luvdisc     Lv 10-30   Common
+     Wailmer     Lv 10-30   Common
+   Super Rod
+     Luvdisc     Lv 30-35   Common
+     Wailmer     Lv 35-45   Very Common
+     Corsola     Lv 30-35   Rare
+
+Victory Road F1
+     Golbat      Lv 38-40   Common
+     Hariyama    Lv 38-40   Common
+     Lairon      Lv 40      Uncommon
+     Loudred     Lv 40      Uncommon
+     Zubat       Lv 36      Uncommon
+     Makuhita    Lv 36      Uncommon
+     Aron        Lv 36      Rare
+     Whismur     Lv 36      Rare
+
+Victory Road BF1
+     Golbat      Lv 38-42   Common
+     Hariyama    Lv 38-42   Common
+     Lairon      Lv 40-42   Common
+     Mawile      Lv 38      Rare
+  rock smash
+     Geodude     Lv 30-40   Common
+     Graveller   Lv 30-40   Very Common
+		
+Victory Road BF2
+     Golbat      Lv 40-44   Common
+     Sableye     Lv 40-44   Common
+     Lairon      Lv 40-44   Common
+     Mawile      Lv 42-44   Rare
+  surf
+     Golbat      Lv 25-40   Very Common
+  fish
+   Old Rod
+     Magikarp    Lv 5-10    Very Common
+     Goldeen     Lv 5-10    Common
+   Good Rod
+     Magikarp    Lv 10-30   Very Common
+     Goldeen     Lv 10-30   Common
+     Barboach    Lv 10-30   Common
+   Super Rod
+     Barboach    Lv 25-35   Very Common
+     Whiscash    Lv 30-45   Common
+
+Altering Cave
+   Altering Cave varies based on mystery events.
+   Until changed, only Zubat will be encountered.
+   Once changed, only the pokemon changed to will
+   be encountered, therefore all are Very Common/
+     Zubat       Lv 6-14
+     Mareep      Lv 5-13
+     Pineco      Lv 19-29
+     Houndour    Lv 12-22
+     Teddiursa   Lv 6-16
+     Aipom       Lv 18-28
+     Shuckle     Lv 18-28
+     Stantler    Lv 18-28
+     Smeargle    Lv 18-28
+
+Desert Tunnel
+     Ditto       Lv 38-45   Very Common
+     Whismur     Lv 35-38   Common
+     Loudred     Lv 38-44   Uncommon
+
+Magma Hideout
+     Geodude     Lv 27-30   Very Common
+     Torkoal     Lv 28-30   Common
+     Graveller   Lv 30-33   Uncommon
+
+Sky Pillar F1, F3
+     Sableye     Lv 33-34   Common
+     Golbat      Lv 34-35   Common
+     Claydol     Lv 36-38   Common
+     Banette     Lv 37-38   Uncommon
+
+Sky Pillar F5
+     Sableye     Lv 33-34   Common
+     Golbat      Lv 34-35   Common
+     Claydol     Lv 36-37   Common
+     Altaria     Lv 38-39   Rare
+     Banette     Lv 37-38   Uncommon
+
+Studio Hole
+     Smeargle    Lv 40-50   Very Common

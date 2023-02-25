@@ -16,8 +16,3 @@ with open('csvs/types.csv', 'w') as file:
         effective_against = response["damage_relations"]["double_damage_to"]
         for j in effective_against:
             writer.writerow([j["name"], base])
-
-
-
-
-
