@@ -1,74 +1,74 @@
 location_id,location_name,available_before
-0,Rt 101,1
-1,Rt 103,1
-2,Rt 102,1
-3,Petalburg City,1
-4,Rt 104,1
-5,Petalburg Woods,1
-6,Rt 116,1
-7,Rusturf Tunnel,1
-8,Rt 105,2
-9,Rt 106,2
-10,Dewford Town,2
-11,Granite Cave F1,2
-12,Granite Cave BF1,2
-13,Granite Cave BF2,2
-14,Granite Cave Stephen’s Room,2
-15,Rt 107,3
-16,Rt 108,3
-17,Abandoned Ship,3
-18,Rt 109,3
-19,Slateport City,3
-20,Rt 110,3
-21,Rt 117,4
-22,Rt 111,4
-23,Illusion Pillar,4
-24,Rt 112,4
-25,Fiery Path,4
-26,Rt 113,4
-27,Rt 114,4
-28,Meteor Falls Entrance,4
-29,Meteor Falls Dragon Room,4
-30,Meteor Falls Back Areas,4
-31,Jagged Pass,4
-32,Rt 115,5
-33,New Mauville Basement,6
-34,New Mauville Entrance,6
-35,Rt 118,6
-36,Rt 119,6
-37,Rt 120,6
-38,Rt 121,7
-39,Lilycove City,7
-40,Rt 122,7
-41,Mt Pyre F1-3,7
-42,Mt Pyre F4-6,7
-43,Mt Pyre Mountain Wall,7
-44,Mt Pyre Summit,7
-45,Magma Hideout,7
-46,Rt 123,7
-47,Rt 124,7
-48,Mossdeep City,7
-49,Rt 125,8
-50,"Shoal Cave Entrance, F1 & BF1",8
-51,Shoal Cave BF2,8
-52,Rt 126,8
-53,Sootopolis City,8
-54,Cave of Origin Entrance,8
-55,"Cave of Origin BF1-3, F1",8
-56,Rt 127,8
-57,Rt 128,8
-58,Seafloor Cavern,8
-59,Rt 129,8
-60,Rt 130 Mirage Island,8
-61,Rt 131,8
-62,Rt 132,8
-63,Rt 133,8
-64,Rt 134,8
-65,"Sky Pillar F1, F3",8
-66,Sky Pillar F5,8
-67,Ever Grande City,9
-68,Victory Road F1,9
-69,Victory Road BF1,9
-70,Victory Road BF2,9
-71,Desert Tunnel,10
-72,Studio Hole,10
+1,Rt 101,1
+2,Rt 103,1
+3,Rt 102,1
+4,Petalburg City,1
+5,Rt 104,1
+6,Petalburg Woods,1
+7,Rt 116,1
+8,Rusturf Tunnel,1
+9,Rt 105,2
+10,Rt 106,2
+11,Dewford Town,2
+12,Granite Cave F1,2
+13,Granite Cave BF1,2
+14,Granite Cave BF2,2
+15,Granite Cave Stephen’s Room,2
+16,Rt 107,3
+17,Rt 108,3
+18,Abandoned Ship,3
+19,Rt 109,3
+20,Slateport City,3
+21,Rt 110,3
+22,Rt 117,4
+23,Rt 111,4
+24,Illusion Pillar,4
+25,Rt 112,4
+26,Fiery Path,4
+27,Rt 113,4
+28,Rt 114,4
+29,Meteor Falls Entrance,4
+30,Meteor Falls Dragon Room,4
+31,Meteor Falls Back Areas,4
+32,Jagged Pass,4
+33,Rt 115,5
+34,New Mauville Basement,6
+35,New Mauville Entrance,6
+36,Rt 118,6
+37,Rt 119,6
+38,Rt 120,6
+39,Rt 121,7
+40,Lilycove City,7
+41,Rt 122,7
+42,Mt Pyre F1-3,7
+43,Mt Pyre F4-6,7
+44,Mt Pyre Mountain Wall,7
+45,Mt Pyre Summit,7
+46,Magma Hideout,7
+47,Rt 123,7
+48,Rt 124,7
+49,Mossdeep City,7
+50,Rt 125,8
+51,"Shoal Cave Entrance, F1 & BF1",8
+52,Shoal Cave BF2,8
+53,Rt 126,8
+54,Sootopolis City,8
+55,Cave of Origin Entrance,8
+56,"Cave of Origin BF1-3, F1",8
+57,Rt 127,8
+58,Rt 128,8
+59,Seafloor Cavern,8
+60,Rt 129,8
+61,Rt 130 Mirage Island,8
+62,Rt 131,8
+63,Rt 132,8
+64,Rt 133,8
+65,Rt 134,8
+66,"Sky Pillar F1, F3",8
+67,Sky Pillar F5,8
+68,Ever Grande City,9
+69,Victory Road F1,9
+70,Victory Road BF1,9
+71,Victory Road BF2,9
+72,Desert Tunnel,10
+73,Studio Hole,10

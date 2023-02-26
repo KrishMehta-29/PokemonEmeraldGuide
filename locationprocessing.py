@@ -10,7 +10,7 @@ last_routes = ["Rusturf Tunnel","Granite Cave Stephen’s Room","Rt 110","Jagged
 
 route = ""
 encounter_type = "normal"
-location_id = 0
+location_id = 1
 cur_gym = 1
 # (pokemon, route, encounter_type)
 with open('locations.txt') as f:
@@ -48,7 +48,7 @@ with open('locations.txt') as f:
                 response = requests.get(url)
                 response = response.json()
                 dex = response["id"]
-                spawns.append((location_id, dex, encounter_type))
+                spawns.append((location_id-1, dex, encounter_type))
 
 # Write to csv
 with open('csvs/locations.csv', 'w') as file:
