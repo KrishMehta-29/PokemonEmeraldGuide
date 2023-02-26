@@ -290,6 +290,7 @@ Rt 117
      Corphish    Lv 20-45   Very Common
 
 Rt 111
+  go-goggles
      Sandshrew   Lv 19-21   Common
      Trapinch    Lv 19-21   Common
      Baltoy      Lv 19-21   Common
@@ -311,6 +312,7 @@ Rt 111
      Barboach    Lv 20-45   Very Common
 
 Illusion Pillar
+  go-goggles
      Sandshrew   Lv 20-24   Very Common
      Trapinch    Lv 20-24   Very Common
 
@@ -371,6 +373,7 @@ Meteor Falls Entrance
      Barboach    Lv 20-45   Very Common
 
 Meteor Falls Dragon Room
+  waterfall
      Golbat      Lv 33-40   Very Common
      Bagon       Lv 25-35   Common
      Solrock     Lv 35-39   Common
@@ -390,6 +393,7 @@ Meteor Falls Dragon Room
      Whiscash    Lv 30-45   Common
 
 Meteor Falls Back Areas
+  waterfall
      Golbat      Lv 33-40   Very Common
      Solrock     Lv 33-39   Common
   surf
@@ -406,6 +410,11 @@ Meteor Falls Back Areas
    Super Rod
      Barboach    Lv 25-35   Very Common
      Whiscash    Lv 30-45   Common
+
+Jagged Pass
+     Numel       Lv 20-22   Very Common
+     Machop      Lv 20-22   Common
+     Spoink      Lv 20-22   Common
 
 Rt 115
      Swablu      Lv 23-25   Common
@@ -427,11 +436,6 @@ Rt 115
      Wailmer     Lv 10-30   Common
    Super Rod
      Wailmer     Lv 20-45   Very Common
-
-Jagged Pass
-     Numel       Lv 20-22   Very Common
-     Machop      Lv 20-22   Common
-     Spoink      Lv 20-22   Common
 
 New Mauville Basement
      Voltorb     Lv 22-26   Very Common
@@ -487,14 +491,6 @@ Rt 119
    Super Rod
      Carvanha    Lv 20-45   Very Common
 
-NOTE:  When fishing on Route 119, there are 6
-       tiles where Feebas can be caught.  Those
-       6 tiles are random, and can be randomized
-       again by resetting the "Trendy Phrase" on 
-       Dewford Island.  Feebas can be caught by
-       any rod at a level that corresponds with
-       the level of the rod.
-
 Rt 120	
      Poochyena   Lv 25      Common
      Mightyena   Lv 25-27   Common
@@ -539,96 +535,6 @@ Rt 121
      Wailmer     Lv 10-30   Common
    Super Rod
      Wailmer     Lv 20-45   Very Common
-
-Safari Zone Entrance & Southwest
-     Oddish      Lv 25-27   Common
-     Girafarig   Lv 25-27   Common
-     Natu        Lv 25      Uncommon
-     Doduo       Lv 25      Uncommon
-     Gloom       Lv 25      Rare
-     Wobbuffet   Lv 27-29   Uncommon
-     Pikachu     Lv 25-27   Rare
-  surf (Southwest)
-     Psyduck     Lv 20-35   Very Common
-  fish (Southwest)
-   Old Rod
-     Magikarp    Lv 5-10    Very Common
-     Goldeen     Lv 5-10    Common
-   Good Rod
-     Magikarp    Lv 10-30   Very Common
-     Goldeen     Lv 10-30   Common
-   Super Rod
-     Goldeen     Lv 25-35   Very Common
-     Seaking     Lv 25-40   Common
-
-Safari Zone Northeast
-     Phanpy      Lv 27-29   Common
-     Oddish      Lv 27-29   Common
-     Natu        Lv 27-29   Uncommon
-     Gloom       Lv 29-31   Uncommon
-     Xatu        Lv 29-31   Rare
-     Heracross   Lv 27-29   Rare
-  rock smash
-     Geodude     Lv 5-30    Very Common
-		
-Safari Zone Northwest
-     Rhyhorn     Lv 27-29   Common
-     Oddish      Lv 27-29   Common
-     Doduo       Lv 27-29   Uncommon
-     Gloom       Lv 29-31   Uncommon
-     Dodrio      Lv 29-31   Rare
-     Pinsir      Lv 27-29   Rare
-  surf
-     Psyduck     Lv 20-35   Very Common
-     Golduck     Lv 25-40   Rare
-  fish
-   Old Rod
-     Magikarp    Lv 5-10    Very Common
-     Goldeen     Lv 5-10    Common
-   Good Rod
-     Magikarp    Lv 10-30   Very Common
-     Goldeen     Lv 10-30   Common
-   Super Rod
-     Goldeen     Lv 25-35   Very Common
-     Seaking     Lv 25-40   Common
-
-Safari Zone Extra 1
-     Sunkern     Lv 33-35   Common
-     Mareep      Lv 34-36   Common
-     Aipom       Lv 34      Uncommon
-     Spinarak    Lv 33      Uncommon
-     Hoothoot    Lv 35      Rare
-     Snubbull    Lv 34      Rare
-     Stantler    Lv 36-39   Rare
-     Gligar      Lv 37-40   Rare
-  surf
-     Wooper      Lv 25-30   Very Common
-     Marill      Lv 25-35   Common
-     Quagsire    Lv 35-40   Very Rare
-  fish
-   Old Rod
-     Magikarp    Lv 25-30   Very Common
-     Goldeen     Lv 25-30   Common
-   Good Rod
-     Magikarp    Lv 25-30   Very Common
-     Goldeen     Lv 25-30   Common
-     Remoraid    Lv 30-35   Common
-   Super Rod
-     Goldeen     Lv 25-30   Common
-     Remoraid    Lv 25-35   Very Common
-     Octillery   Lv 35-40   Very Rare
-
-Safari Zone Extra 2
-     Aipom       Lv 33-35   Common
-     Teddiursa   Lv 34-36   Common
-     Sunkern     Lv 34      Uncommon
-     Ledyba      Lv 33      Uncommon
-     Hoothoot    Lv 35      Rare
-     Pineco      Lv 34      Rare
-     Houndour    Lv 36-39   Rare
-     Miltank     Lv 37-40   Rare
-  rock smash
-     Shuckle     Lv 20-40   Very Common
 
 Lilycove City
   surf
@@ -680,6 +586,11 @@ Mt Pyre Summit
      Shuppet     Lv 24-30   Very Common
      Duskull     Lv 26-30   Uncommon
      Chimecho    Lv 28      Very Rare
+
+Magma Hideout
+     Geodude     Lv 27-30   Very Common
+     Torkoal     Lv 28-30   Common
+     Graveler   Lv 30-33    Uncommon
 
 Rt 123
      Poochyena   Lv 26      Common
@@ -789,7 +700,7 @@ Rt 126
      Tentacool   Lv 5-35    Very Common
      Wingull     Lv 10-30   Common
      Pelipper    Lv 25-30   Rare
-  underwater surf
+  underwater
      Clamperl    Lv 20-35   Very Common
      Chinchou    Lv 20-30   Common
      Relicanth   Lv 30-35   Rare
@@ -986,6 +897,19 @@ Rt 134
      Wailmer     Lv 30-45   Very Common
      Horsea      Lv 25-30   Uncommon
 
+Sky Pillar F1, F3
+     Sableye     Lv 33-34   Common
+     Golbat      Lv 34-35   Common
+     Claydol     Lv 36-38   Common
+     Banette     Lv 37-38   Uncommon
+
+Sky Pillar F5
+     Sableye     Lv 33-34   Common
+     Golbat      Lv 34-35   Common
+     Claydol     Lv 36-37   Common
+     Altaria     Lv 38-39   Rare
+     Banette     Lv 37-38   Uncommon
+
 Ever Grande City
   surf
      Tentacool   Lv 5-35    Very Common
@@ -1021,8 +945,8 @@ Victory Road BF1
      Mawile      Lv 38      Rare
   rock smash
      Geodude     Lv 30-40   Common
-     Graveller   Lv 30-40   Very Common
-		
+     Graveler   Lv 30-40    Very Common
+
 Victory Road BF2
      Golbat      Lv 40-44   Common
      Sableye     Lv 40-44   Common
@@ -1042,43 +966,10 @@ Victory Road BF2
      Barboach    Lv 25-35   Very Common
      Whiscash    Lv 30-45   Common
 
-Altering Cave
-   Altering Cave varies based on mystery events.
-   Until changed, only Zubat will be encountered.
-   Once changed, only the pokemon changed to will
-   be encountered, therefore all are Very Common/
-     Zubat       Lv 6-14
-     Mareep      Lv 5-13
-     Pineco      Lv 19-29
-     Houndour    Lv 12-22
-     Teddiursa   Lv 6-16
-     Aipom       Lv 18-28
-     Shuckle     Lv 18-28
-     Stantler    Lv 18-28
-     Smeargle    Lv 18-28
-
 Desert Tunnel
      Ditto       Lv 38-45   Very Common
      Whismur     Lv 35-38   Common
      Loudred     Lv 38-44   Uncommon
-
-Magma Hideout
-     Geodude     Lv 27-30   Very Common
-     Torkoal     Lv 28-30   Common
-     Graveller   Lv 30-33   Uncommon
-
-Sky Pillar F1, F3
-     Sableye     Lv 33-34   Common
-     Golbat      Lv 34-35   Common
-     Claydol     Lv 36-38   Common
-     Banette     Lv 37-38   Uncommon
-
-Sky Pillar F5
-     Sableye     Lv 33-34   Common
-     Golbat      Lv 34-35   Common
-     Claydol     Lv 36-37   Common
-     Altaria     Lv 38-39   Rare
-     Banette     Lv 37-38   Uncommon
 
 Studio Hole
      Smeargle    Lv 40-50   Very Common
