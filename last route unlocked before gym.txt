@@ -1,0 +1,10 @@
+gym,up_to_route
+1,Rusturf Tunnel
+2,Granite Cave Stephen’s Room
+3,Rt 110
+4,Jagged Pass
+5,Rt 115
+6,Rt 120
+7,Mossdeep City
+8,Sky Pillar F5
+e4,Victory Road BF2

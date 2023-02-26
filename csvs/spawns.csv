@@ -1,0 +1,604 @@
+location_id,dex_no,item
+1,265,normal
+1,261,normal
+1,263,normal
+2,261,normal
+2,278,normal
+2,263,normal
+2,72,surf
+2,278,surf
+2,279,surf
+2,129,old rod
+2,72,old rod
+2,129,good rod
+2,72,good rod
+2,320,good rod
+2,319,super rod
+2,320,super rod
+3,261,normal
+3,265,normal
+3,270,normal
+3,263,normal
+3,280,normal
+3,273,normal
+3,183,surf
+3,118,surf
+3,129,old rod
+3,118,old rod
+3,129,good rod
+3,118,good rod
+3,341,good rod
+3,341,super rod
+4,183,surf
+4,129,old rod
+4,118,old rod
+4,129,good rod
+4,118,good rod
+4,341,good rod
+4,341,super rod
+5,261,normal
+5,265,normal
+5,183,normal
+5,276,normal
+5,278,normal
+5,278,surf
+5,279,surf
+5,129,surf
+6,261,normal
+6,265,normal
+6,285,normal
+6,266,normal
+6,268,normal
+6,276,normal
+6,287,normal
+7,261,normal
+7,293,normal
+7,290,normal
+7,63,normal
+7,276,normal
+7,300,normal
+8,293,normal
+9,72,surf
+9,278,surf
+9,279,surf
+9,129,old rod
+9,72,old rod
+9,129,good rod
+9,72,good rod
+9,320,good rod
+9,320,super rod
+10,72,surf
+10,278,surf
+10,279,surf
+10,129,old rod
+10,72,old rod
+10,129,good rod
+10,72,good rod
+10,320,good rod
+10,320,super rod
+11,72,surf
+11,278,surf
+11,279,surf
+11,129,old rod
+11,72,old rod
+11,129,good rod
+11,72,good rod
+11,320,good rod
+11,320,super rod
+12,41,normal
+12,296,normal
+12,63,normal
+12,74,normal
+13,41,normal
+13,304,normal
+13,63,normal
+13,296,normal
+13,302,normal
+14,41,normal
+14,304,normal
+14,63,normal
+14,302,normal
+14,74,normal
+14,299,normal
+15,41,normal
+15,296,normal
+15,63,normal
+15,304,normal
+16,72,surf
+16,278,surf
+16,279,surf
+16,129,old rod
+16,72,old rod
+16,129,good rod
+16,72,good rod
+16,320,good rod
+16,320,super rod
+17,72,surf
+17,278,surf
+17,279,surf
+17,129,old rod
+17,72,old rod
+17,129,good rod
+17,72,good rod
+17,320,good rod
+17,320,super rod
+18,72,surf
+18,73,surf
+18,129,old rod
+18,72,old rod
+18,129,good rod
+18,72,good rod
+18,72,super rod
+18,73,super rod
+19,72,surf
+19,278,surf
+19,279,surf
+19,129,old rod
+19,72,old rod
+19,129,good rod
+19,72,good rod
+19,320,good rod
+19,320,super rod
+20,72,surf
+20,278,surf
+20,279,surf
+20,129,old rod
+20,72,old rod
+20,129,good rod
+20,72,good rod
+20,320,good rod
+20,320,super rod
+21,261,normal
+21,309,normal
+21,316,normal
+21,312,normal
+21,43,normal
+21,278,normal
+21,311,normal
+21,72,surf
+21,278,surf
+21,279,surf
+21,129,old rod
+21,72,old rod
+21,129,good rod
+21,72,good rod
+21,320,good rod
+21,320,super rod
+22,261,normal
+22,43,normal
+22,183,normal
+22,314,normal
+22,313,normal
+22,273,normal
+22,183,surf
+22,118,surf
+22,129,old rod
+22,118,old rod
+22,129,good rod
+22,118,good rod
+22,341,good rod
+22,341,super rod
+23,27,go-goggles
+23,328,go-goggles
+23,343,go-goggles
+23,331,go-goggles
+23,74,go-goggles
+23,183,surf
+23,118,surf
+23,129,old rod
+23,118,old rod
+23,129,good rod
+23,118,good rod
+23,339,good rod
+23,339,super rod
+24,27,go-goggles
+24,328,go-goggles
+25,322,normal
+25,183,normal
+26,322,normal
+26,109,normal
+26,66,normal
+26,324,normal
+26,218,normal
+26,88,normal
+27,327,normal
+27,218,normal
+27,227,normal
+28,333,normal
+28,270,normal
+28,271,normal
+28,336,normal
+28,274,normal
+28,74,normal
+28,183,surf
+28,118,surf
+28,129,old rod
+28,118,old rod
+28,129,good rod
+28,118,good rod
+28,339,good rod
+28,339,super rod
+29,41,normal
+29,338,normal
+29,41,surf
+29,338,surf
+29,129,old rod
+29,118,old rod
+29,129,good rod
+29,118,good rod
+29,339,good rod
+29,339,super rod
+30,42,waterfall
+30,371,waterfall
+30,338,waterfall
+30,42,surf
+30,338,surf
+30,129,old rod
+30,118,old rod
+30,129,good rod
+30,118,good rod
+30,339,good rod
+30,339,super rod
+30,340,super rod
+31,42,waterfall
+31,338,waterfall
+31,42,surf
+31,338,surf
+31,129,old rod
+31,118,old rod
+31,129,good rod
+31,118,good rod
+31,339,good rod
+31,339,super rod
+31,340,super rod
+32,322,normal
+32,66,normal
+32,325,normal
+33,333,normal
+33,276,normal
+33,277,normal
+33,39,normal
+33,278,normal
+33,72,surf
+33,278,surf
+33,279,surf
+33,129,old rod
+33,72,old rod
+33,129,good rod
+33,72,good rod
+33,320,good rod
+33,320,super rod
+34,100,normal
+34,81,normal
+34,101,normal
+34,82,normal
+35,100,normal
+35,81,normal
+36,263,normal
+36,309,normal
+36,264,normal
+36,310,normal
+36,278,normal
+36,352,normal
+36,72,surf
+36,278,surf
+36,279,surf
+36,129,old rod
+36,72,old rod
+36,129,good rod
+36,72,good rod
+36,318,good rod
+36,319,super rod
+36,318,super rod
+37,263,normal
+37,264,normal
+37,43,normal
+37,357,normal
+37,352,normal
+37,72,surf
+37,278,surf
+37,279,surf
+37,129,old rod
+37,72,old rod
+37,129,good rod
+37,72,good rod
+37,318,good rod
+37,318,super rod
+38,261,normal
+38,262,normal
+38,43,normal
+38,183,normal
+38,359,normal
+38,352,normal
+38,273,normal
+38,183,surf
+38,118,surf
+38,129,old rod
+38,118,old rod
+38,129,good rod
+38,118,good rod
+38,339,good rod
+38,339,super rod
+39,261,normal
+39,353,normal
+39,262,normal
+39,43,normal
+39,44,normal
+39,278,normal
+39,352,normal
+39,72,surf
+39,278,surf
+39,279,surf
+39,129,old rod
+39,72,old rod
+39,129,good rod
+39,72,good rod
+39,320,good rod
+39,320,super rod
+40,72,surf
+40,278,surf
+40,279,surf
+40,129,old rod
+40,72,old rod
+40,129,good rod
+40,72,good rod
+40,320,good rod
+40,320,super rod
+40,120,super rod
+41,72,surf
+41,278,surf
+41,279,surf
+41,129,old rod
+41,72,old rod
+41,129,good rod
+41,72,good rod
+41,320,good rod
+41,319,super rod
+41,320,super rod
+42,353,normal
+43,353,normal
+43,355,normal
+44,353,normal
+44,37,normal
+44,278,normal
+45,353,normal
+45,355,normal
+45,358,normal
+46,74,normal
+46,324,normal
+46,75,normal
+47,261,normal
+47,353,normal
+47,262,normal
+47,43,normal
+47,44,normal
+47,278,normal
+47,352,normal
+47,72,surf
+47,278,surf
+47,279,surf
+47,129,old rod
+47,72,old rod
+47,129,good rod
+47,72,good rod
+47,320,good rod
+47,320,super rod
+48,72,surf
+48,278,surf
+48,279,surf
+48,366,underwater
+48,170,underwater
+48,369,underwater
+48,129,old rod
+48,72,old rod
+48,129,good rod
+48,72,good rod
+48,320,good rod
+48,319,super rod
+48,320,super rod
+49,72,surf
+49,278,surf
+49,279,surf
+49,129,old rod
+49,72,old rod
+49,129,good rod
+49,72,good rod
+49,320,good rod
+49,319,super rod
+49,320,super rod
+50,72,surf
+50,278,surf
+50,279,surf
+50,129,old rod
+50,72,old rod
+50,129,good rod
+50,72,good rod
+50,320,good rod
+50,319,super rod
+50,320,super rod
+51,41,normal
+51,42,normal
+51,363,normal
+51,72,surf
+51,41,surf
+51,363,surf
+51,129,old rod
+51,72,old rod
+51,129,good rod
+51,72,good rod
+51,320,good rod
+51,320,super rod
+52,41,normal
+52,361,normal
+52,42,normal
+52,363,normal
+53,72,surf
+53,278,surf
+53,279,surf
+53,366,underwater
+53,170,underwater
+53,369,underwater
+53,129,old rod
+53,72,old rod
+53,129,good rod
+53,72,good rod
+53,320,good rod
+53,319,super rod
+53,320,super rod
+54,129,surf
+54,129,old rod
+54,72,old rod
+54,129,good rod
+54,129,super rod
+54,130,super rod
+55,41,normal
+55,42,normal
+56,41,normal
+56,302,normal
+56,42,normal
+57,72,surf
+57,278,surf
+57,279,surf
+57,129,old rod
+57,72,old rod
+57,129,good rod
+57,72,good rod
+57,320,good rod
+57,319,super rod
+57,320,super rod
+58,72,surf
+58,278,surf
+58,279,surf
+58,129,old rod
+58,72,old rod
+58,129,good rod
+58,72,good rod
+58,320,good rod
+58,370,super rod
+58,320,super rod
+58,222,super rod
+59,41,normal
+59,72,surf
+59,41,surf
+59,42,surf
+59,129,old rod
+59,72,old rod
+59,129,good rod
+59,72,good rod
+59,320,good rod
+59,320,super rod
+60,72,surf
+60,278,surf
+60,279,surf
+60,321,surf
+60,129,old rod
+60,72,old rod
+60,129,good rod
+60,72,good rod
+60,320,good rod
+60,319,super rod
+60,320,super rod
+61,360,normal
+61,72,surf
+61,278,surf
+61,279,surf
+61,129,old rod
+61,72,old rod
+61,129,good rod
+61,72,good rod
+61,320,good rod
+61,319,super rod
+61,320,super rod
+62,72,surf
+62,278,surf
+62,279,surf
+62,129,old rod
+62,72,old rod
+62,129,good rod
+62,72,good rod
+62,320,good rod
+62,319,super rod
+62,320,super rod
+63,72,surf
+63,278,surf
+63,279,surf
+63,129,old rod
+63,72,old rod
+63,129,good rod
+63,72,good rod
+63,320,good rod
+63,319,super rod
+63,320,super rod
+63,116,super rod
+64,72,surf
+64,278,surf
+64,279,surf
+64,129,old rod
+64,72,old rod
+64,129,good rod
+64,72,good rod
+64,320,good rod
+64,319,super rod
+64,320,super rod
+64,116,super rod
+65,72,surf
+65,278,surf
+65,279,surf
+65,129,old rod
+65,72,old rod
+65,129,good rod
+65,72,good rod
+65,320,good rod
+65,319,super rod
+65,320,super rod
+65,116,super rod
+66,302,normal
+66,42,normal
+66,344,normal
+66,354,normal
+67,302,normal
+67,42,normal
+67,344,normal
+67,334,normal
+67,354,normal
+68,72,surf
+68,278,surf
+68,279,surf
+68,129,old rod
+68,72,old rod
+68,129,good rod
+68,370,good rod
+68,320,good rod
+68,370,super rod
+68,320,super rod
+68,222,super rod
+69,42,normal
+69,297,normal
+69,305,normal
+69,294,normal
+69,41,normal
+69,296,normal
+69,304,normal
+69,293,normal
+70,42,normal
+70,297,normal
+70,305,normal
+70,303,normal
+70,74,normal
+70,75,normal
+71,42,normal
+71,302,normal
+71,305,normal
+71,303,normal
+71,42,surf
+71,129,old rod
+71,118,old rod
+71,129,good rod
+71,118,good rod
+71,339,good rod
+71,339,super rod
+71,340,super rod
+72,132,normal
+72,293,normal
+72,294,normal
+73,235,normal
