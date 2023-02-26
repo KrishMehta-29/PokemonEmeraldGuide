@@ -26,7 +26,7 @@ CREATE TABLE pokemon (
     dex_no INT PRIMARY KEY,
     pkmn_name VARCHAR(15) NOT NULL,
     bst INT NOT NULL,
-    type1 VARCHAR(9),
+    type1 VARCHAR(9) NOT NULL,
     type2 VARCHAR(9)
 );
 
