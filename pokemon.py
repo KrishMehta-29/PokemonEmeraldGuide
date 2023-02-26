@@ -3,52 +3,72 @@ import json
 import csv
 
 with open('csvs/pokemons.csv', 'w',  newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["DexID", "Name", "bst", "type1", "type2"])
+    with open('csvs/evolution.csv', 'w', newline='') as evolve:
 
-    BASE_URL = "https://pokeapi.co/api/v2/"
-    POKEDEX = "pokedex/4/"
+        writer = csv.writer(file)
+        writer.writerow(["DexID", "Name", "bst", "type1", "type2"])
 
-    res = requests.get(BASE_URL + POKEDEX)
-    json_object = res.json()
+        evolveWriter = csv.writer(evolve)
+        evolveWriter.writerow(["fromDexID, toDexID, method"])
 
-    pokemonSpecies = json_object["pokemon_entries"]
+        BASE_URL = "https://pokeapi.co/api/v2/"
+        POKEDEX = "pokedex/4/"
 
-    pokemonLst = []
-    i = 0
+        res = requests.get(BASE_URL + POKEDEX)
+        json_object = res.json()
 
-    for pokemonS in pokemonSpecies:
-        res = requests.get(pokemonS['pokemon_species']['url'])
+        pokemonSpecies = json_object["pokemon_entries"]
+        echains = []
 
-        pokemons = res.json()['varieties']
+        pokemonLst = []
+        pokemonMap = {}
+        i = 0
 
-        # SPRITES CAN BE GOT
-        
-        for pokemon in pokemons:
-            if not pokemon['is_default']:
-                continue
+        for pokemonS in pokemonSpecies:
+            res = requests.get(pokemonS['pokemon_species']['url'])
+            pokemonLst.append(pokemonS['pokemon_species']['name'])
 
-            res = requests.get(pokemon['pokemon']['url'])
-            r = res.json()
-            stats = r['stats']
-            types = r['types']
-            name = r['name']
+            pokemons = res.json()['varieties']
+            echain = res.json()['evolution_chain']['url']
 
-            bst = 0
-            for stat in stats:
-                bst += int(stat['base_stat'])
+            if echain not in echains:
+                echains.append(echain)
 
-            ts = []
-            for type in types:
+            # SPRITES CAN BE GOT
             
-                ts.append(type['type']['name'])
+            for pokemon in pokemons:
+                if not pokemon['is_default']:
+                    continue
 
-            toWrite = [r['id'], r['name'], str(bst)] + ts
-            writer.writerow(toWrite)
-      
+                res = requests.get(pokemon['pokemon']['url'])
+                r = res.json()
+                stats = r['stats']
+                types = r['types']
+                name = r['name']                
 
-        i += 1
-        if i % 10 == 0: print(i)
+                bst = 0
+                for stat in stats:
+                    bst += int(stat['base_stat'])
 
-        if i > 5:
+                ts = []
+                for type in types:
+                    ts.append(type['type']['name'])
+
+                toWrite = [r['id'], r['name'], str(bst)] + ts
+                writer.writerow(toWrite)
+        
+
+            i += 1
+            if i % 10 == 0: print(i)
+
+            if i > 5:
+                break
+
+        for echain in echains:
+            res = requests.get(echain)
+            r = res.json()['chain']
+            
+            print(r['species']['name'])
+            print(r['evolves_to'][0]['species']['name'])
+
             break
