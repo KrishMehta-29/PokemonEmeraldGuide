@@ -49,7 +49,7 @@ CREATE TABLE gym (
 );
 
 -- represents all locations in the game
-CREATE TABLE location (
+CREATE TABLE locations (
     location_id INT PRIMARY KEY,
     location_name VARCHAR(30) NOT NULL,
     available_before_gym INT NOT NULL
@@ -61,7 +61,7 @@ CREATE TABLE spawns (
     dex_no INT,
     method VARCHAR(10) NOT NULL,
     PRIMARY KEY (location_id, dex_no),
-    FOREIGN KEY (location_id) REFERENCES location(location_id),
+    FOREIGN KEY (location_id) REFERENCES locations(location_id),
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
 );
 
