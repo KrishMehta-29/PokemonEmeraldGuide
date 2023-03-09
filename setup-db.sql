@@ -45,9 +45,9 @@ CREATE TABLE pc (
 -- represents all gym battles in the game
 CREATE TABLE gym (
     gym_no INT PRIMARY KEY,
-    gym_leader VARCHAR(15) NOT NULL,
-    gym_type VARCHAR(9) NOT NULL,
-    gym_level_cap INT NOT NULL
+    gym_leader VARCHAR(15),
+    gym_type VARCHAR(9),
+    gym_level_cap INT
 );
 
 -- represents what items/method beating a gym will unlock
