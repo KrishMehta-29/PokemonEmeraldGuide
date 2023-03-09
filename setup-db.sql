@@ -83,9 +83,11 @@ CREATE TABLE evolves (
     dex_no INT,
     goes_to_dex_no INT,
     evolve_level INT NOT NULL,
-    PRIMARY KEY (dex_no, goes_to_dex_no)
-    -- FOREIGN KEY (dex_no, goes_to_dex_no) REFERENCES pokemon(dex_no, dex_no)
-    --     ON DELETE CASCADE ON UPDATE CASCADE
+    PRIMARY KEY (dex_no, goes_to_dex_no),
+    FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (goes_to_dex_no) REFERENCES pokemon(dex_no)
+        ON DELETE CASCADE ON UPDATE CASCADE
 ); 
 
 -- represents which types are good into others

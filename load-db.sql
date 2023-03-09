@@ -1,6 +1,7 @@
 -- Loads CSV files into MySQL database tables
 
 -- TODO: player table
+-- TODO: CRLF
 
 LOAD DATA LOCAL INFILE 'csvs/pokemons.csv' INTO TABLE pokemon
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
