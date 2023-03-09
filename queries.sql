@@ -18,7 +18,21 @@ WHERE available_before_gym <= 5;
 -- which pokemon can be caught bY player w/ PLAYER_ID = X (not accounting for evolution)
 SELECT DISTINCT pkmn_name
 FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
-WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym;
+WHERE player_id = 2 AND available_before_gym <= next_gym AND gym_no < next_gym;
+
+-- find types supereffective against given type
+SELECT effective_type
+FROM types
+WHERE receiver = 'Grass';
+
+-- find all pokemon that are effective against a given type
+SELECT DISTINCT pkmn_name
+FROM pokemon NATURAL JOIN types
+WHERE receiver = 'Grass' AND 
+    (type1 IN 
+        (SELECT effective_type FROM types WHERE receiver = 'Grass') 
+    OR type2 IN 
+        (SELECT effective_type FROM types WHERE receiver = 'Grass'));
 
 
 
