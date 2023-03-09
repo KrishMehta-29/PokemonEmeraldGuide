@@ -60,7 +60,7 @@ CREATE TABLE spawns (
     location_id INT,
     dex_no INT,
     method VARCHAR(10) NOT NULL,
-    PRIMARY KEY (location_id, dex_no),
+    PRIMARY KEY (location_id, dex_no, method),
     FOREIGN KEY (location_id) REFERENCES locations(location_id),
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
 );
@@ -71,8 +71,9 @@ CREATE TABLE evolves (
     goes_to_dex_no INT,
     evolve_level INT NOT NULL,
     PRIMARY KEY (dex_no, goes_to_dex_no),
-    FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
-);
+    FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no),
+    FOREIGN KEY (goes_to_dex_no) REFERENCES pokemon(dex_no)
+); 
 
 -- represents which types are good into others
 CREATE TABLE types (
