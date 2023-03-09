@@ -1,9 +1,9 @@
-Gym Number,Type,Level Cap
-1,rock,15
-2,fighting,19
-3,electric,24
-4,fire,29
-5,normal,31
-6,flying,33
-7,psychic,42
-8,water,46
+Gym_Number,leader,Type,Level Cap
+1,Roxanne,rock,15
+2,Brawly,fighting,19
+3,Wattson,electric,24
+4,Flannery,fire,29
+5,Norman,normal,31
+6,Winona,flying,33
+7,Tate & Liza,psychic,42
+8,Juan,water,46
