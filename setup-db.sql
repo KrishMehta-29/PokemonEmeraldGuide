@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS pokemon;
 DROP TABLE IF EXISTS player;
 
 
--- TODO: FOREIGN KEY STUFF
+-- TODO: double check FOREIGN KEY STUFF
 
 
 -- represents a user of our guide, stores user-specific information like
@@ -70,13 +70,13 @@ CREATE TABLE locations (
 CREATE TABLE spawns (
     location_id INT,
     dex_no INT,
-    method VARCHAR(10) NOT NULL,
+    method VARCHAR(10),
     PRIMARY KEY (location_id, dex_no, method),
     FOREIGN KEY (location_id) REFERENCES locations(location_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (method) REFERENCES unlocks(method0)
+    FOREIGN KEY (method) REFERENCES unlocks(method)
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -85,11 +85,9 @@ CREATE TABLE evolves (
     dex_no INT,
     goes_to_dex_no INT,
     evolve_level INT NOT NULL,
-    PRIMARY KEY (dex_no, goes_to_dex_no),
-    FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no),
-        ON DELETE CASCADE ON UPDATE CASCADE
-    FOREIGN KEY (goes_to_dex_no) REFERENCES pokemon(dex_no)
-        ON DELETE CASCADE ON UPDATE CASCADE
+    PRIMARY KEY (dex_no, goes_to_dex_no)
+    -- FOREIGN KEY (dex_no, goes_to_dex_no) REFERENCES pokemon(dex_no, dex_no)
+    --     ON DELETE CASCADE ON UPDATE CASCADE
 ); 
 
 -- represents which types are good into others
@@ -98,4 +96,3 @@ CREATE TABLE types (
     effective_type VARCHAR(9),
     PRIMARY KEY (receiver, effective_type)
 );
-
