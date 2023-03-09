@@ -36,8 +36,10 @@ CREATE TABLE pc (
     dex_no INT,
     count INT NOT NULL,
     PRIMARY KEY (player_id, dex_no),
-    FOREIGN KEY (player_id) REFERENCES player(player_id),
+    FOREIGN KEY (player_id) REFERENCES player(player_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- represents all gym battles in the game
@@ -46,6 +48,15 @@ CREATE TABLE gym (
     gym_leader VARCHAR(15) NOT NULL,
     gym_type VARCHAR(9) NOT NULL,
     gym_level_cap INT NOT NULL
+);
+
+-- represents what items/method beating a gym will unlock
+CREATE TABLE unlocks (
+    gym_no INT,
+    method VARCHAR(10),
+    PRIMARY KEY (gym_no, method),
+    FOREIGN KEY (gym_no) REFERENCES gym(gym_no)
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- represents all locations in the game
@@ -61,8 +72,12 @@ CREATE TABLE spawns (
     dex_no INT,
     method VARCHAR(10) NOT NULL,
     PRIMARY KEY (location_id, dex_no, method),
-    FOREIGN KEY (location_id) REFERENCES locations(location_id),
+    FOREIGN KEY (location_id) REFERENCES locations(location_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (method) REFERENCES unlocks(method0)
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- represents all pokemon evolutions in the game
@@ -72,7 +87,9 @@ CREATE TABLE evolves (
     evolve_level INT NOT NULL,
     PRIMARY KEY (dex_no, goes_to_dex_no),
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no),
+        ON DELETE CASCADE ON UPDATE CASCADE
     FOREIGN KEY (goes_to_dex_no) REFERENCES pokemon(dex_no)
+        ON DELETE CASCADE ON UPDATE CASCADE
 ); 
 
 -- represents which types are good into others
@@ -82,10 +99,3 @@ CREATE TABLE types (
     PRIMARY KEY (receiver, effective_type)
 );
 
--- represents what items/method beating a gym will unlock
-CREATE TABLE unlocks (
-    gym_no INT,
-    method VARCHAR(10),
-    PRIMARY KEY (gym_no, method),
-    FOREIGN KEY (gym_no) REFERENCES gym(gym_no),
-);
