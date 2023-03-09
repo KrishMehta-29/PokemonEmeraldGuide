@@ -4,22 +4,13 @@ DROP TABLE IF EXISTS types;
 DROP TABLE IF EXISTS evolves;
 DROP TABLE IF EXISTS spawns;
 DROP TABLE IF EXISTS locations;
-DROP TABLE IF EXISTS gym;
 DROP TABLE IF EXISTS pc;
-DROP TABLE IF EXISTS pokemon;
 DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS gym;
+DROP TABLE IF EXISTS pokemon;
 
 
 -- TODO: double check FOREIGN KEY STUFF
-
-
--- represents a user of our guide, stores user-specific information like
--- how far they have progressed and what they've unlocked
-CREATE TABLE player (
-    player_id INT PRIMARY KEY,
-    player_name VARCHAR(30) NOT NULL,
-    badges INT NOT NULL
-);
 
 -- represents a pokemon in the game
 CREATE TABLE pokemon (
@@ -28,6 +19,23 @@ CREATE TABLE pokemon (
     bst INT NOT NULL,
     type1 VARCHAR(9) NOT NULL,
     type2 VARCHAR(9)
+);
+
+-- represents all gym battles in the game
+CREATE TABLE gym (
+    gym_no INT PRIMARY KEY,
+    gym_leader VARCHAR(15),
+    gym_type VARCHAR(9),
+    gym_level_cap INT
+);
+
+-- represents a user of our guide, stores user-specific information like
+-- how far they have progressed and what they've unlocked
+CREATE TABLE player (
+    player_id INT PRIMARY KEY,
+    player_name VARCHAR(30) NOT NULL,
+    next_gym INT,
+    FOREIGN KEY (next_gym) REFERENCES gym(gym_no)
 );
 
 -- represents all the pokeon a player has caught
@@ -40,14 +48,6 @@ CREATE TABLE pc (
         ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (dex_no) REFERENCES pokemon(dex_no)
         ON DELETE CASCADE ON UPDATE CASCADE
-);
-
--- represents all gym battles in the game
-CREATE TABLE gym (
-    gym_no INT PRIMARY KEY,
-    gym_leader VARCHAR(15),
-    gym_type VARCHAR(9),
-    gym_level_cap INT
 );
 
 -- represents what items/method beating a gym will unlock

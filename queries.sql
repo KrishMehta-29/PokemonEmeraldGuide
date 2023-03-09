@@ -3,8 +3,9 @@
 -- These queries will probably be wrapped in Python in some other file,
 -- so file is just to design/test them.
 
-
-
+-- test players
+insert into player values(1, 'bob', 1);
+insert into player values(2,'bill', 3);
 
 -- VERY BASIC QUERIES THAT MAY BE USED IN OTHER QUERIES:
 
@@ -14,14 +15,10 @@ FROM locations
 WHERE available_before_gym <= 5;
 
 
--- which pokemon can be caught before gym X (not accounting for evolution)
-SELECT DISTINCT dex_no
-FROM (
-    SELECT 
-    FROM locations
-    WHERE available_before_gym <= 5
-) NATURAL JOIN spawns NATURAL JOIN unlocks
-WHERE gym_no <= 5; --idk if this is right, can test when we have actual db
+-- which pokemon can be caught bY player w/ PLAYER_ID = X (not accounting for evolution)
+SELECT DISTINCT pkmn_name
+FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym;
 
 
 
