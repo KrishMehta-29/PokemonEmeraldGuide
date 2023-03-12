@@ -14,11 +14,10 @@ SELECT *
 FROM locations
 WHERE available_before_gym <= 5;
 
-
 -- which pokemon can be caught bY player w/ PLAYER_ID = X (not accounting for evolution)
 SELECT DISTINCT pkmn_name
 FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
-WHERE player_id = 2 AND available_before_gym <= next_gym AND gym_no < next_gym;
+WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym;
 
 -- find types supereffective against given type
 SELECT effective_type
@@ -34,7 +33,48 @@ WHERE receiver = 'Grass' AND
     OR type2 IN 
         (SELECT effective_type FROM types WHERE receiver = 'Grass'));
 
+-- Current levelcap
 
+DELIMITER !
+CREATE FUNCTION getLevelCap (player_id_inp INT) RETURNS INT DETERMINISTIC
+BEGIN
+    DECLARE levelCap INT DEFAULT 0;
+
+    SELECT SUM(gym_level_cap) INTO levelCap 
+    FROM player INNER JOIN gym ON player.next_gym = gym.gym_no 
+    WHERE player_id = player_id_inp;
+        
+    RETURN levelCap;
+END !
+DELIMITER ;
+
+-- which pokemon can be caught bY player w/ PLAYER_ID = X (accounting for evolution)
+SELECT * 
+FROM pokemon NATURAL JOIN 
+    ((
+        SELECT goes_to_dex_no as dex_no 
+        FROM evolves NATURAL JOIN (
+            SELECT goes_to_dex_no as dex_no
+            FROM evolves NATURAL JOIN (
+                SELECT DISTINCT dex_no
+                FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+                WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym
+            ) as pkmn_available
+            WHERE evolves.evolve_level < 15) as pkmn_found
+        WHERE evolves.evolve_level < 15
+    ) UNION (
+        SELECT goes_to_dex_no as dex_no
+        FROM evolves NATURAL JOIN (
+            SELECT DISTINCT dex_no
+            FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+            WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym
+        ) as pkmn_available
+        WHERE evolves.evolve_level < 15
+    ) UNION (
+        SELECT DISTINCT dex_no
+        FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+        WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym 
+    )) as t
 
 -- supereffective types on gym (idk if this is the best way to do this????)
 DELIMITER !
@@ -62,3 +102,5 @@ BEGIN
     RETURN super;
 END !
 DELIMITER ;
+
+
