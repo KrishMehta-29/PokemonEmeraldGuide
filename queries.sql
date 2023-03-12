@@ -91,19 +91,18 @@ DELIMITER ;
 
 -- procedure to find all pokemon effective into type
 DELIMITER !
-CREATE PROCEDURE get_effective_pkmn (t VARCHAR(15))
+CREATE PROCEDURE get_effective_pkmn (pid INT)
 BEGIN
-    SELECT DISTINCT pkmn_name
-    FROM pokemon NATURAL JOIN types
-    WHERE receiver = t AND 
+    SELECT DISTINCT dex_no
+    FROM pokemon NATURAL JOIN types NATURAL JOIN gym 
+    INNER JOIN player ON player.next_gym = gym.gym_no
+    WHERE receiver = gym_type AND player.player_id=pid AND
         (type1 IN 
-            (SELECT effective_type FROM types WHERE receiver = t) 
+            (SELECT effective_type FROM types WHERE receiver = gym_type) 
         OR type2 IN 
-            (SELECT effective_type FROM types WHERE receiver = t));
+            (SELECT effective_type FROM types WHERE receiver = gym_type));
 END !
 DELIMITER ;
-
-
 
 DELIMITER !
 CREATE FUNCTION getLevelCap (player_id_inp INT) RETURNS INT DETERMINISTIC
@@ -115,6 +114,19 @@ BEGIN
     WHERE player_id = player_id_inp;
         
     RETURN levelCap;
+END !
+DELIMITER ;
+
+DELIMITER !
+CREATE PROCEDURE getBestPokemon (pid INT)
+BEGIN   
+    -- SELECT *
+    -- FROM ( 
+    --     CALL getAvailablePkmn(pid) INTERSECT CALL get_effective_pkmn(pid)
+    --     ) as bestPokemonID NATURAL JOIN pokemon 
+    -- ORDER BY bst DESC;
+    CALL getAvailablePkmn(pid);
+    CALL get_effective_pkmn(pid);
 END !
 DELIMITER ;
 
