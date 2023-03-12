@@ -120,13 +120,47 @@ DELIMITER ;
 DELIMITER !
 CREATE PROCEDURE getBestPokemon (pid INT)
 BEGIN   
-    -- SELECT *
-    -- FROM ( 
-    --     CALL getAvailablePkmn(pid) INTERSECT CALL get_effective_pkmn(pid)
-    --     ) as bestPokemonID NATURAL JOIN pokemon 
-    -- ORDER BY bst DESC;
-    CALL getAvailablePkmn(pid);
-    CALL get_effective_pkmn(pid);
+    DECLARE levelCap INT DEFAULT 0;
+    SELECT getLevelCap(pid) INTO levelCap;
+
+    SELECT * 
+    FROM (
+        (
+            SELECT DISTINCT dex_no
+            FROM pokemon NATURAL JOIN types NATURAL JOIN gym 
+            INNER JOIN player ON player.next_gym = gym.gym_no
+            WHERE receiver = gym_type AND player.player_id=pid AND
+                (type1 IN 
+                    (SELECT effective_type FROM types WHERE receiver = gym_type) 
+                OR type2 IN 
+                    (SELECT effective_type FROM types WHERE receiver = gym_type))
+        ) INTERSECT (
+            (
+                SELECT goes_to_dex_no as dex_no 
+                FROM evolves NATURAL JOIN (
+                    SELECT goes_to_dex_no as dex_no
+                    FROM evolves NATURAL JOIN (
+                        SELECT DISTINCT dex_no
+                        FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+                        WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym
+                    ) as pkmn_available
+                    WHERE evolves.evolve_level < levelCap) as pkmn_found
+                WHERE evolves.evolve_level < levelCap
+            ) UNION (
+                SELECT goes_to_dex_no as dex_no
+                FROM evolves NATURAL JOIN (
+                    SELECT DISTINCT dex_no
+                    FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+                    WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym
+                ) as pkmn_available
+                WHERE evolves.evolve_level < levelCap
+            ) UNION (
+                SELECT DISTINCT dex_no
+                FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+                WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym 
+            )
+        )
+    ) as result NATURAL JOIN pokemon;
 END !
 DELIMITER ;
 
