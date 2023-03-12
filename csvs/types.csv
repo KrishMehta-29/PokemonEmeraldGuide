@@ -8,7 +8,6 @@ fighting,flying
 bug,flying
 grass,flying
 grass,poison
-fairy,poison
 poison,ground
 rock,ground
 steel,ground
@@ -25,7 +24,6 @@ ghost,ghost
 psychic,ghost
 rock,steel
 ice,steel
-fairy,steel
 bug,fire
 steel,fire
 grass,fire
@@ -47,6 +45,3 @@ dragon,ice
 dragon,dragon
 ghost,dark
 psychic,dark
-fighting,fairy
-dragon,fairy
-dark,fairy
