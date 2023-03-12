@@ -32,9 +32,11 @@ CREATE TABLE gym (
 -- represents a user of our guide, stores user-specific information like
 -- how far they have progressed and what they've unlocked
 CREATE TABLE player (
-    player_id INT PRIMARY KEY,
-    player_name VARCHAR(30) NOT NULL,
+    player_id INT,
+    username VARCHAR(20),
     next_gym INT,
+    PRIMARY KEY (player_id, username),
+    FOREIGN KEY (username) REFERENCES user_info(username),
     FOREIGN KEY (next_gym) REFERENCES gym(gym_no)
 );
 

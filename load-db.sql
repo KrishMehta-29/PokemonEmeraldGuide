@@ -28,3 +28,5 @@ LOAD DATA LOCAL INFILE 'csvs/unlocks.csv' INTO TABLE unlocks
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 
 -- TODO: remove rows that contain fairy type
+
+CREATE INDEX idx_dex_no ON pokemon (dex_no);
