@@ -102,8 +102,41 @@ BEGIN
 END !
 DELIMITER ;
 
+DELIMITER !
+CREATE PROCEDURE getAvailablePkmn (pid INT)
+BEGIN
+    DECLARE levelCap INT DEFAULT 0;
+    SELECT getLevelCap(pid) INTO levelCap;
+    
+    (
+        SELECT goes_to_dex_no as dex_no 
+        FROM evolves NATURAL JOIN (
+            SELECT goes_to_dex_no as dex_no
+            FROM evolves NATURAL JOIN (
+                SELECT DISTINCT dex_no
+                FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+                WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym
+            ) as pkmn_available
+            WHERE evolves.evolve_level < levelCap) as pkmn_found
+        WHERE evolves.evolve_level < levelCap
+    ) UNION (
+        SELECT goes_to_dex_no as dex_no
+        FROM evolves NATURAL JOIN (
+            SELECT DISTINCT dex_no
+            FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+            WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym
+        ) as pkmn_available
+        WHERE evolves.evolve_level < levelCap
+    ) UNION (
+        SELECT DISTINCT dex_no
+        FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
+        WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym 
+    );
+END !
+DELIMITER ;
+
 -- which pokemon can be caught bY player w/ PLAYER_ID = X (accounting for evolution)
-SELECT * 
+SELECT *
 FROM pokemon NATURAL JOIN 
     ((
         SELECT goes_to_dex_no as dex_no 
@@ -128,7 +161,7 @@ FROM pokemon NATURAL JOIN
         SELECT DISTINCT dex_no
         FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
         WHERE player_id = 1 AND available_before_gym <= next_gym AND gym_no < next_gym 
-    )) as t
+    )) as pokemonAvailable 
 
 -- supereffective types on gym (idk if this is the best way to do this????)
 DELIMITER !
