@@ -79,12 +79,13 @@ def example_query():
     cursor = conn.cursor()
     # Remember to pass arguments as a tuple like so to prevent SQL
     # injection.
-    sql = 'SELECT col1 FROM table WHERE col2 = \'%s\';' % (param1, )
+    sql = 'CALL getBestPokemon(1);'
     try:
         cursor.execute(sql)
         # row = cursor.fetchone()
         rows = cursor.fetchall()
         for row in rows:
+            print(row)
             (col1val) = (row) # tuple unpacking!
             # do stuff with row data
     except mysql.connector.Error as err:
@@ -127,8 +128,8 @@ def show_options():
     ans = input('Enter an option: ').lower()
     if ans == 'q':
         quit_ui()
-    elif ans == '':
-        pass
+    elif ans == 'w':
+        example_query()
 
 
 # Another example of where we allow you to choose to support admin vs. 
