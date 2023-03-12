@@ -1,7 +1,6 @@
 -- Loads CSV files into MySQL database tables
 
 -- TODO: player table
--- TODO: CRLF
 
 LOAD DATA LOCAL INFILE 'csvs/pokemons.csv' INTO TABLE pokemon
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
@@ -27,6 +26,6 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROW
 LOAD DATA LOCAL INFILE 'csvs/unlocks.csv' INTO TABLE unlocks
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 
--- TODO: remove rows that contain fairy type
+DELETE FROM types WHERE receiver = 'Fairy' OR effective_type = 'Fairy';
 
 CREATE INDEX idx_dex_no ON pokemon (dex_no);

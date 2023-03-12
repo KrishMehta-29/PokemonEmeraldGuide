@@ -89,6 +89,36 @@ BEGIN
 END !
 DELIMITER ;
 
+-- procedure to add pokemon to player's pc (catching a pokemon)
+DELIMITER !
+CREATE PROCEDURE add_pkmn_to_pc (pid INT, dex_no INTO)
+BEGIN
+    INSERT INTO pc
+        -- pokemon not already in pc; add row
+        VALUES (pid, dex_no, 1)
+    ON DUPLICATE KEY UPDATE 
+        -- branch already in view; update existing row
+        count = count + 1;
+END !
+DELIMITER ;
+
+-- procedure to create user
+DELIMITER !
+CREATE PROCEDURE add_user (un VARCHAR(20))
+BEGIN
+    INSERT INTO player (username, next_gym) VALUES (un, 1);
+END !
+DELIMITER ;
+
+-- example trigger to add user to user table after making username/password
+DELIMITER !
+CREATE TRIGGER trg_user_insert AFTER INSERT
+       ON user_info FOR EACH ROW
+BEGIN
+    CALL add_user(NEW.username);
+END !
+DELIMITER ;
+
 -- procedure to find all pokemon effective into type
 DELIMITER !
 CREATE PROCEDURE get_effective_pkmn (pid INT)
