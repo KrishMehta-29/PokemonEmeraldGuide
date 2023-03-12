@@ -1,6 +1,6 @@
 """
-TODO: Student name(s):
-TODO: Student email(s):
+Student name(s): Krish Mehta, Leo Yang
+Student email(s): kmmehta@caltech.edu lyang3@caltech.edu
 TODO: High-level program overview
 
 ******************************************************************************
@@ -51,7 +51,7 @@ def get_conn():
           # SHOW VARIABLES WHERE variable_name LIKE 'port';
           port='3306',  # this may change!
           password='adminpw',
-          database='shelterdb' # replace this with your database name
+          database='final' # replace this with your database name
         )
         print('Successfully connected.')
         return conn
@@ -95,8 +95,6 @@ def example_query():
         else:
             # TODO: Please actually replace this :) 
             sys.stderr('An error occurred, give something useful for clients...')
-
-
 
 # ----------------------------------------------------------------------
 # Functions for Logging Users In
