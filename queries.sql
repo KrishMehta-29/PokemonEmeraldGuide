@@ -7,6 +7,12 @@
 insert into player values(1, 'bob', 1);
 insert into player values(2,'bill', 3);
 
+-- give bob some pokemon (treeko, lotad, slakoth)
+insert into pc values(1,252,1); 
+insert into pc values(1,270,1);
+insert into pc values(1,287,1); 
+
+
 -- VERY BASIC QUERIES THAT MAY BE USED IN OTHER QUERIES:
 
 -- all locations before gym X
@@ -34,6 +40,54 @@ WHERE receiver = 'Grass' AND
     OR type2 IN 
         (SELECT effective_type FROM types WHERE receiver = 'Grass'));
 
+-- find all pokemon that are effective against next gym leader:
+SELECT DISTINCT pkmn_name
+FROM pokemon NATURAL JOIN types NATURAL JOIN gym 
+INNER JOIN player ON player.next_gym = gym.gym_no
+WHERE receiver = gym_type AND player.player_id=1 AND
+    (type1 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type) 
+    OR type2 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type));
+
+-- find all pokemon that the player owns that the player should use against next gym
+SELECT DISTINCT pkmn_name
+FROM pokemon NATURAL JOIN types NATURAL JOIN gym NATURAL JOIN pc
+INNER JOIN player ON player.next_gym = gym.gym_no
+WHERE receiver = gym_type AND player.player_id=1 AND
+    (type1 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type) 
+    OR type2 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type));
+
+-- find top 6 pokemon that the player owns that the player should use against next gym
+SELECT DISTINCT pkmn_name, bst
+FROM pokemon NATURAL JOIN types NATURAL JOIN gym NATURAL JOIN pc
+INNER JOIN player ON player.next_gym = gym.gym_no
+WHERE receiver = gym_type AND player.player_id=1 AND
+    (type1 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type) 
+    OR type2 IN 
+        (SELECT effective_type FROM types WHERE receiver = gym_type))
+ORDER BY bst DESC
+LIMIT 6;
+
+-- get team from pc for next gym
+DELIMITER !
+CREATE PROCEDURE choose_team (pid INT)
+BEGIN
+    SELECT DISTINCT pkmn_name,bst
+    FROM pokemon NATURAL JOIN types NATURAL JOIN gym NATURAL JOIN pc
+    INNER JOIN player ON player.next_gym = gym.gym_no
+    WHERE receiver = gym_type AND player.player_id=pid AND
+        (type1 IN 
+            (SELECT effective_type FROM types WHERE receiver = gym_type) 
+        OR type2 IN 
+            (SELECT effective_type FROM types WHERE receiver = gym_type))
+    ORDER BY bst DESC
+    LIMIT 6;
+END !
+DELIMITER ;
 
 
 -- supereffective types on gym (idk if this is the best way to do this????)
