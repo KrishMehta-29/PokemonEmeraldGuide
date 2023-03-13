@@ -107,9 +107,13 @@ BEGIN
     FROM player
     WHERE username = un;
         
-    RETURN levelCap;
+    RETURN pid;
 END !
 DELIMITER ;
+
+SELECT MAX(player_id) 
+FROM player
+WHERE username = 'bob';
 
 -- procedure to add pokemon to player's pc (catching a pokemon)
 DELIMITER !

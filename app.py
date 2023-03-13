@@ -75,7 +75,6 @@ def get_conn():
 # Functions for Command-Line Options/Query Execution
 # ----------------------------------------------------------------------
 def example_query():
-    param1 = ''
     cursor = conn.cursor()
     # Remember to pass arguments as a tuple like so to prevent SQL
     # injection.
@@ -97,6 +96,123 @@ def example_query():
             # TODO: Please actually replace this :) 
             sys.stderr('An error occurred, give something useful for clients...')
 
+def catch_pokemon(pid, pkmn):
+    # TODO Check valid pokemon
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"CALL add_pkmn_to_pc({pid}, '{pkmn.lower()}');"
+    print(f"Executing: {sql}")
+
+    try:
+        cursor.execute(sql)
+        conn.commit()
+       
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+
+def show_box(pid):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = 'SELECT * FROM pc WHERE player_id={pid}' 
+    print(f"Executing: {sql}")
+    try:
+        cursor.execute(sql)
+        # row = cursor.fetchone()
+        rows = cursor.fetchall()
+        for row in rows:
+            print(row)
+            (col1val) = (row) # tuple unpacking!
+            # do stuff with row data
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+
+
+def find_best_pkmn(pid):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"CALL getBestPokemon({pid});" 
+    print(f"Executing: {sql}")
+
+    try:
+        cursor.execute(sql)
+        # row = cursor.fetchone()
+        rows = cursor.fetchall()
+        for row in rows:
+            print(row)
+            (col1val) = (row) # tuple unpacking!
+            # do stuff with row data
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+    
+
+def find_best_box_pkmn(pid):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"CALL getAvailablePkmn({pid});" 
+    print(f"Executing: {sql}")
+
+    try:
+        cursor.execute(sql)
+        # row = cursor.fetchone()
+        rows = cursor.fetchall()
+        for row in rows:
+            print(row)
+            (col1val) = (row) # tuple unpacking!
+            # do stuff with row data
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+    
+def get_pid(username):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"SELECT getPid('{username}');"
+    print(f"Executing: {sql}")
+    try:
+        cursor.execute(sql)
+        row = cursor.fetchone()
+        print(f"PID GOT: {row}")
+        return row[0]
+    
+            # do stuff with row data
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+    
+
 # ----------------------------------------------------------------------
 # Functions for Logging Users In
 # ----------------------------------------------------------------------
@@ -106,31 +222,120 @@ def example_query():
 # app-client.py vs. app-admin.py (in which case you don't need to
 # support any prompt functionality to conditionally login to the sql database)
 
+def log_in(username, pwd):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"SELECT authenticate('{username}', '{pwd}');"
+    print(f"Executing: {sql}")
+    try:
+        cursor.execute(sql)
+        row = cursor.fetchone()
+        
+        if row[0]:
+            print("Successful Login")
+            pid = get_pid(username)
+            print("PID: {pid}")
+            show_options(pid)
+
+        else:
+            print("Unsuccessful Login")
+            show_options_login()
+        
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+
+def create_user(username, pwd):
+    cursor = conn.cursor()
+    # Remember to pass arguments as a tuple like so to prevent SQL
+    # injection.
+    sql = f"CALL sp_add_user('{username}', '{pwd}');"
+    
+    try:
+        cursor.execute(sql)
+        print("Executing SQL")
+        conn.commit()
+        # row = cursor.fetchone()
+        pid = get_pid(username)
+        show_options(pid)
+
+            # do stuff with row data
+    except mysql.connector.Error as err:
+        # If you're testing, it's helpful to see more details printed.
+        if DEBUG:
+            sys.stderr(err)
+            sys.exit(1)
+        else:
+            # TODO: Please actually replace this :) 
+            sys.stderr('An error occurred, give something useful for clients...')
+
 
 # ----------------------------------------------------------------------
 # Command-Line Functionality
 # ----------------------------------------------------------------------
 # TODO: Please change these!
-def show_options():
+def show_options_login():
     """
     Displays options users can choose in the application, such as
     viewing <x>, filtering results with a flag (e.g. -s to sort),
     sending a request to do <x>, etc.
     """
     print('What would you like to do? ')
-    print('  (TODO: provide command-line options)')
-    print('  (x) - something nifty to do')
-    print('  (x) - another nifty thing')
-    print('  (x) - yet another nifty thing')
-    print('  (x) - more nifty things!')
+    print('  login [username] [password]') 
+    print('  create [username] [password]')
     print('  (q) - quit')
     print()
     ans = input('Enter an option: ').lower()
-    if ans == 'q':
-        quit_ui()
-    elif ans == 'w':
-        example_query()
 
+    ansParts = ans.split(" ")
+
+    if ansParts[0] == 'q':
+        quit_ui()
+
+    elif ansParts[0] == 'login' and len(ansParts) == 3:
+        log_in(ansParts[1], ansParts[2])
+
+    elif ansParts[0] == 'create' and len(ansParts) == 3:
+        create_user(ansParts[1], ansParts[2])
+
+def show_options(pid):
+    """
+    Displays options users can choose in the application, such as
+    viewing <x>, filtering results with a flag (e.g. -s to sort),
+    sending a request to do <x>, etc.
+    """
+    print('What would you like to do? ')
+    print('update_gym [gym_no]')
+    print('catch [pokemon]') 
+    print('show box')
+    print('(fbp) find best pokemon')
+    print('(fbbp) - find best box pokemon')
+    print('(q) - quit')
+    print()
+    ans = input('Enter an option: ').lower()
+
+    ansParts = ans.split(" ")
+
+    if ansParts[0] == 'q':
+        quit_ui()
+
+    elif ansParts[0] == 'catch' and len(ansParts) == 2:
+        catch_pokemon(pid, ansParts[1])
+
+    elif ansParts[0] == 'show' and ansParts[1] == 'box' and len(ansParts) == 2:
+        show_box(pid)
+
+    elif ansParts[0] == 'fbp':
+        find_best_pkmn(pid)
+
+    elif ansParts[0] == 'fbbp':
+        find_best_box_pkmn(pid)
 
 # Another example of where we allow you to choose to support admin vs. 
 # client features  in the same program, or
@@ -167,7 +372,7 @@ def main():
     """
     Main function for starting things up.
     """
-    show_options()
+    show_options_login()
 
 
 if __name__ == '__main__':
