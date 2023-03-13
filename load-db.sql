@@ -2,6 +2,8 @@
 
 -- TODO: player table
 
+set global local_infile=true;
+
 LOAD DATA LOCAL INFILE 'csvs/pokemons.csv' INTO TABLE pokemon
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 

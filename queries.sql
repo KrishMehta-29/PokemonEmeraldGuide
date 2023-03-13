@@ -89,6 +89,20 @@ BEGIN
 END !
 DELIMITER ;
 
+-- function to get player_id from username (assuming all players have diff usernames)
+DELIMITER !
+CREATE FUNCTION getPid(un VARCHAR(20)) RETURNS INT DETERMINISTIC
+BEGIN
+    DECLARE pid INT DEFAULT 0;
+
+    SELECT MAX(player_id) INTO pid 
+    FROM player
+    WHERE username = un;
+        
+    RETURN levelCap;
+END !
+DELIMITER ;
+
 -- procedure to add pokemon to player's pc (catching a pokemon)
 DELIMITER !
 CREATE PROCEDURE add_pkmn_to_pc (pid INT, dex_no INTO)
