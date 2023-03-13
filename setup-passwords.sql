@@ -2,6 +2,8 @@
 
 SET GLOBAL log_bin_trust_function_creators = 1;
 
+DROP TABLE IF EXISTS user_info;
+
 -- (Provided) This function generates a specified number of characters for using as a
 -- salt in passwords.
 DELIMITER !
@@ -91,14 +93,14 @@ DELIMITER ;
 -- [Problem 1c]
 -- Add at least two users into your user_info table so that when we run this file,
 -- we will have examples users in the database.
-CALL sp_add_user('bob', 'password');
-CALL sp_add_user('bill', 'dog');
+-- CALL sp_add_user('bob', 'password');
+-- CALL sp_add_user('bill', 'dog');
 
-SELECT authenticate('bob', 'hello');     -- Should return 0 (false)
-SELECT authenticate('bob', 'password');    -- Should return 1 (true)
-SELECT authenticate('bob', 'dog');      -- Should return 0 (false)
-SELECT authenticate('bill', 'password');      -- Should return 0 (false)
-SELECT authenticate('bill', 'dog');   -- Should return 1 (true)
+-- SELECT authenticate('bob', 'hello');     -- Should return 0 (false)
+-- SELECT authenticate('bob', 'password');    -- Should return 1 (true)
+-- SELECT authenticate('bob', 'dog');      -- Should return 0 (false)
+-- SELECT authenticate('bill', 'password');      -- Should return 0 (false)
+-- SELECT authenticate('bill', 'dog');   -- Should return 1 (true)
 
 -- [Problem 1d]
 -- Optional: Create a procedure sp_change_password to generate a new salt and change the given

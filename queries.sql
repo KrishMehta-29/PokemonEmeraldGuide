@@ -4,13 +4,13 @@
 -- so file is just to design/test them.
 
 -- test players
-insert into player values(1, 'bob', 1);
-insert into player values(2,'bill', 3);
+-- insert into player values(1, 'bob', 1);
+-- insert into player values(2,'bill', 3);
 
 -- give bob some pokemon (treeko, lotad, slakoth)
-insert into pc values(1,252,1); 
-insert into pc values(1,270,1);
-insert into pc values(1,287,1); 
+-- insert into pc values(1,252,1); 
+-- insert into pc values(1,270,1);
+-- insert into pc values(1,287,1); 
 
 
 -- VERY BASIC QUERIES THAT MAY BE USED IN OTHER QUERIES:
