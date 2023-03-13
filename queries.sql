@@ -89,6 +89,14 @@ BEGIN
 END !
 DELIMITER ;
 
+-- procedure to update gym number for user
+DELIMITER !
+CREATE PROCEDURE update_gym (pid INT, gym_no INT)
+BEGIN
+    UPDATE player SET next_gym = gym_no WHERE player_id = pid;
+END !
+DELIMITER ;
+
 -- function to get player_id from username (assuming all players have diff usernames)
 DELIMITER !
 CREATE FUNCTION getPid(un VARCHAR(20)) RETURNS INT DETERMINISTIC

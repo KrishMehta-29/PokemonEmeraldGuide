@@ -30,4 +30,4 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROW
 
 DELETE FROM types WHERE receiver = 'Fairy' OR effective_type = 'Fairy';
 
-CREATE INDEX idx_dex_no ON pokemon (dex_no);
+CREATE INDEX available_before_gym_idx ON locations (available_before_gym);
