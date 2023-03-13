@@ -113,11 +113,17 @@ DELIMITER ;
 
 -- procedure to add pokemon to player's pc (catching a pokemon)
 DELIMITER !
-CREATE PROCEDURE add_pkmn_to_pc (pid INT, dex_no INTO)
+CREATE PROCEDURE add_pkmn_to_pc (pid INT, name VARCHAR(20))
 BEGIN
+    DECLARE dex INT;
+
+    SELECT dex_no INTO dex
+    FROM pokemon
+    WHERE pkmn_name = name;
+
     INSERT INTO pc
         -- pokemon not already in pc; add row
-        VALUES (pid, dex_no, 1)
+        VALUES (pid, dex, 1)
     ON DUPLICATE KEY UPDATE 
         -- branch already in view; update existing row
         count = count + 1;
