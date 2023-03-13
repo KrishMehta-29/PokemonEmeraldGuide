@@ -320,6 +320,7 @@ def show_options(pid):
     print()
     ans = input('Enter an option: ').lower()
 
+    # Prevents SQL injection by splitting input string into individual words
     ansParts = ans.split(" ")
 
     if ansParts[0] == 'q':
