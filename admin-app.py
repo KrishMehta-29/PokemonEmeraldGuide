@@ -58,6 +58,7 @@ def get_conn():
 
         print('Successfully connected.')
         return conn
+    
     except mysql.connector.Error as err:
         # Remember that this is specific to _database_ users, not
         # application users. So is probably irrelevant to a client in your
@@ -111,7 +112,7 @@ def get_conn_user():
 # Functions for Command-Line Options/Query Execution
 # ----------------------------------------------------------------------
 
-def execute_sql(conn, sql, error, commit=False):
+def execute_sql(user_conn, sql, error, commit=False):
     conn.reconnect()
     cursor = conn.cursor()
     try:
@@ -220,6 +221,27 @@ def updateGym(userConn, pid, gymNo):
     for row in rows:
         print(row) 
 
+def aInsertLocation(userConn, loc_id, pkmn_id, item):
+    sql = f"CALL admin_insert_location ({loc_id}, {pkmn_id}, '{item}');"
+    rows = execute_sql(userConn, sql, "An error occured, cannot get info", commit=True)
+
+    for row in rows:
+        print(row)
+
+def aUpdateLocation(userConn, loc_id, pkmn_id, new_loc):
+    sql = f"CALL admin_update_location ({loc_id}, '{pkmn_id}', {new_loc});"
+    rows = execute_sql(userConn, sql, "An error occured, cannot get info", commit=True)
+
+    for row in rows:
+        print(row)
+
+def aDeleteLocation(userConn, loc_id, pkmn_id, item):
+    sql = f"CALL admin_delete_location ({loc_id}, '{pkmn_id}', {item});"
+    rows = execute_sql(userConn, sql, "An error occured, cannot get info", commit=True)
+
+    for row in rows:
+        print(row)
+
 # ----------------------------------------------------------------------
 # Functions for Logging Users In
 # ----------------------------------------------------------------------
@@ -242,9 +264,7 @@ def log_in(username, pwd):
             print("Successful Login")
             pid = get_pid(conn, username)
             
-
-            user_conn = get_conn_user() # Getting the user connection
-            controlLoop(pid, user_conn)
+            controlLoop(pid, None)
 
         else:
             print("Unsuccessful Login")
@@ -271,9 +291,7 @@ def create_user(username, pwd):
         conn.commit()
         # row = cursor.fetchone()
         pid = get_pid(username)
-        user_conn = get_conn_user()
-        controlLoop(pid, user_conn)
-
+        controlLoop(pid, None)
 
             # do stuff with row data
     except mysql.connector.Error as err:
@@ -341,6 +359,11 @@ def show_options(pid, userConn):
     print('accessible locations - Finds all the accessible locations')
     print('location [location] - Finds all catchable pokemon at the [location]')
     print('accessible pokemons - Finds all pokemon accessible')
+    print('\n')
+    print('insert [loc_id] [pkmn_id] [item] - Inserts a pokemon at a particular location')
+    print('update [old_loc_id] [pkmn_id] [new_loc_id] - Updates a pokemons location')
+    print('delete [loc_id] [pkmn_id] [item] - Deletes a pokemon at a particular location')
+
     print('q - quit')
 
     ans = input('\nEnter an option: ').lower()
@@ -378,6 +401,15 @@ def show_options(pid, userConn):
 
     elif ansParts[0] == 'accessible' and ansParts[1] == 'pokemons' and len(ansParts) == 2:
         findAllCatchablePokemon(userConn, pid)
+
+    elif ansParts[0] == 'insert' and len(ansParts) == 4:
+        aInsertLocation(userConn, ansParts[1], ansParts[2], ansParts[3])
+
+    elif ansParts[0] == 'update' and len(ansParts) == 4:
+        aUpdateLocation(userConn, ansParts[1], ansParts[2], ansParts[3])
+
+    elif ansParts[0] == 'delete' and len(ansParts) == 4:
+        aDeleteLocation(userConn, ansParts[1], ansParts[2], ansParts[3])
 
     input("\nPress Enter to Continue")
 

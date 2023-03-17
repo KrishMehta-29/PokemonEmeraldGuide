@@ -161,7 +161,7 @@ DELIMITER ;
 
 -- admin procedure to delete pokemon to location
 DELIMITER !
-CREATE PROCEDURE admin_insert_location (loc INT, dex INT, item VARCHAR(20))
+CREATE PROCEDURE admin_delete_location (loc INT, dex INT, item VARCHAR(20))
 BEGIN
     DELETE FROM spawns WHERE location_id=loc AND dex_no=dex AND method=item;
 END !
