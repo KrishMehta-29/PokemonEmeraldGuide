@@ -8,7 +8,7 @@ import mysql.connector
 import mysql.connector.errorcode as errorcode
 import os
 
-DEBUG = True
+DEBUG = False
 
 # ----------------------------------------------------------------------
 # SQL Utility Functions
