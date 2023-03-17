@@ -161,7 +161,7 @@ def findAllPokemonOnLocation(userConn, route):
         print(row[0])
 
 def findAllLocations(userConn, pid):
-    sql = f"SELECT location_name FROM player NATURAL JOIN locations WHERE player.next_gym > locations.available_before_gym AND player.player_id = {pid};"
+    sql = f"CALL find_accessible_locations({pid});"
     rows = execute_sql(userConn, sql, "An error occured, routes not available")
 
     print(f"All Available Locations: \n")

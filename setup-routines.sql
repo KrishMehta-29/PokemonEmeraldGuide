@@ -122,7 +122,7 @@ BEGIN
 
     SELECT location_name
     FROM locations
-    WHERE available_before_gym < nextgmy;
+    WHERE available_before_gym <= nextgym;
 END !
 DELIMITER ;
 

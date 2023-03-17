@@ -14,3 +14,17 @@ evolutions, and routes.
 6. `source setup-db.sql;`
 7. `source load-db.sql;`
 8. `source setup-routines.sql`
+
+### Usage Example
+1. Let's say you want to run as a user, go to `client-app.py` and run this Python file
+2. Now, we need to create an account. Type in `create user1 password1`. This is your username and password.
+3. Now that we have an account, let's pretend we're playing Pokemon Emerald and we picked Mudkip as our starter,
+so let's run `catch mudkip`.
+4. Now if we run `show box`, it shows the Mudkip!
+5. Now let's plan a team for taking on the first gym. Run `find best pokemon` to show a list of available pokemon
+that are good for the first gym.
+6. Let's say in our game we caught a Shroomish. So let's run `catch shroomish`.
+7. Now let's say we beat the first Gym Leader in our Pokemon Emerald game. Run `update gym 2`.
+8. Now the list of available locations and thus pokemon should have updated. Run 
+`accessible locations` and `accessible pokemons` to see the lists.
+9. Now continue to play the game and use our app to help guide you!
