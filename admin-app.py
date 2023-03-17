@@ -254,7 +254,7 @@ def create_user(username, pwd):
         print("Executing SQL")
         conn.commit()
         # row = cursor.fetchone()
-        pid = get_pid(username)
+        pid = get_pid(conn, username)
         controlLoop(pid, None)
 
             # do stuff with row data

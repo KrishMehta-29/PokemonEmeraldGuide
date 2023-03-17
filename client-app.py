@@ -230,7 +230,6 @@ def log_in(username, pwd):
             sys.stderr(err)
             sys.exit(1)
         else:
-            # TODO: Please actually replace this :) 
             sys.stderr('An error occurred, give something useful for clients...')
 
 def create_user(username, pwd):
@@ -239,24 +238,23 @@ def create_user(username, pwd):
     # injection.
     sql = f"CALL sp_add_user('{username}', '{pwd}');"
     
+    print(username, pwd)
+
     try:
         cursor.execute(sql)
         print("Executing SQL")
         conn.commit()
         # row = cursor.fetchone()
-        pid = get_pid(username)
+        pid = get_pid(conn, username)
         user_conn = get_conn_user()
         controlLoop(pid, user_conn)
-
-
-            # do stuff with row data
+            
     except mysql.connector.Error as err:
         # If you're testing, it's helpful to see more details printed.
         if DEBUG:
             sys.stderr(err)
             sys.exit(1)
         else:
-            # TODO: Please actually replace this :) 
             sys.stderr('An error occurred, give something useful for clients...')
 
 # ----------------------------------------------------------------------
