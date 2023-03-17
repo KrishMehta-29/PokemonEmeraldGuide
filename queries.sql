@@ -167,6 +167,42 @@ BEGIN
 END !
 DELIMITER ;
 
+-- procedure to find all pokemon on a given route
+DELIMITER !
+CREATE PROCEDURE add_pkmn_to_pc (name VARCHAR(20))
+BEGIN
+    DECLARE lid VARCHAR(20);
+
+    SELECT location_id INTO lid
+    FROM locations
+    WHERE location_name = name;
+
+    SELECT DISTINCT pkmn_name
+    FROM (
+        SELECT dex_no
+        FROM spawns
+        WHERE location_id = lid
+    ) as nums NATURAL JOIN pokemon;
+END !
+DELIMITER ;
+
+-- procedure to find all accessible locations
+DELIMITER !
+CREATE PROCEDURE find_accessible_locations (pid INT)
+BEGIN
+    DECLARE nextgmy VARCHAR(20);
+
+    SELECT next_gym INTO nextgym
+    FROM player
+    WHERE player_id = pid;
+
+    SELECT location_name
+    FROM locations
+    WHERE available_before_gym < next_gym;
+END !
+DELIMITER ;
+
+
 -- procedure to create user
 DELIMITER !
 CREATE PROCEDURE add_user (un VARCHAR(20))
