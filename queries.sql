@@ -142,6 +142,39 @@ BEGIN
 END !
 DELIMITER ;
 
+-- admin procedure to insert pokemon to location
+DELIMITER !
+CREATE PROCEDURE admin_insert_location (loc INT, dex INT, item VARCHAR(20))
+BEGIN
+    INSERT INTO spawns VALUES (loc, dex, item);
+END !
+DELIMITER ;
+
+-- admin procedure to update pokemon to location
+DELIMITER !
+CREATE PROCEDURE admin_update_location (old_loc INT, old_dex INT, new_loc INT)
+BEGIN
+    UPDATE spawns SET location_id = new_loc
+        WHERE dex_no = dex AND location_id=old_loc;
+END !
+DELIMITER ;
+
+-- admin procedure to delete pokemon to location
+DELIMITER !
+CREATE PROCEDURE admin_insert_location (loc INT, dex INT, item VARCHAR(20))
+BEGIN
+    DELETE FROM spawns WHERE location_id=loc AND dex_no=dex AND method=item;
+END !
+DELIMITER ;
+
+-- procedure to create user
+DELIMITER !
+CREATE PROCEDURE add_user (un VARCHAR(20))
+BEGIN
+    INSERT INTO player (username, next_gym) VALUES (un, 1);
+END !
+DELIMITER ;
+
 -- example trigger to add user to user table after making username/password
 DELIMITER !
 CREATE TRIGGER trg_user_insert AFTER INSERT
