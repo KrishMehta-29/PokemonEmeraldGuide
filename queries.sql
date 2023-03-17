@@ -76,7 +76,7 @@ LIMIT 6;
 DELIMITER !
 CREATE PROCEDURE choose_team (pid INT)
 BEGIN
-    SELECT DISTINCT pkmn_name,bst
+    SELECT pkmn_name
     FROM pokemon NATURAL JOIN types NATURAL JOIN gym NATURAL JOIN pc
     INNER JOIN player ON player.next_gym = gym.gym_no
     WHERE receiver = gym_type AND player.player_id=pid AND
@@ -169,7 +169,7 @@ DELIMITER ;
 
 -- procedure to find all pokemon on a given route
 DELIMITER !
-CREATE PROCEDURE add_pkmn_to_pc (name VARCHAR(20))
+CREATE PROCEDURE findAllPokemonOnLocation (name VARCHAR(20))
 BEGIN
     DECLARE lid VARCHAR(20);
 
@@ -190,7 +190,7 @@ DELIMITER ;
 DELIMITER !
 CREATE PROCEDURE find_accessible_locations (pid INT)
 BEGIN
-    DECLARE nextgmy VARCHAR(20);
+    DECLARE nextgmy INT;
 
     SELECT next_gym INTO nextgym
     FROM player
@@ -198,7 +198,7 @@ BEGIN
 
     SELECT location_name
     FROM locations
-    WHERE available_before_gym < next_gym;
+    WHERE available_before_gym < nextgmy;
 END !
 DELIMITER ;
 
@@ -295,12 +295,16 @@ BEGIN
 END !
 DELIMITER ;
 
+
+-- gets available pokemon to catch
 DELIMITER !
 CREATE PROCEDURE getAvailablePkmn (pid INT)
 BEGIN
     DECLARE levelCap INT DEFAULT 0;
     SELECT getLevelCap(pid) INTO levelCap;
     
+    SELECT pkmn_name 
+    FROM pokemon NATURAL JOIN (
     (
         SELECT goes_to_dex_no as dex_no 
         FROM evolves NATURAL JOIN (
@@ -324,7 +328,7 @@ BEGIN
         SELECT DISTINCT dex_no
         FROM locations NATURAL JOIN spawns NATURAL JOIN unlocks NATURAL JOIN player NATURAL JOIN pokemon
         WHERE player_id = pid AND available_before_gym <= next_gym AND gym_no < next_gym 
-    );
+    )) as t;
 END !
 DELIMITER ;
 
