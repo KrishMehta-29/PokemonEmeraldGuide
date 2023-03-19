@@ -1,4 +1,6 @@
 # PokemonEmeraldGuide
+Krish Mehta, Leo Yang
+kmmehta@caltech.edu, lyang3@caltech.edu
 
 ### Data Collection
 Our data primarily comes from scraping [PokeAPI](https://pokeapi.co/) using custom Python scripts.
